@@ -13,7 +13,7 @@
 <body>
 
 <div class="topNav">
-<h1 class="bar">&nbsp;INTERSHOP IOM 4.0.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision 2a034bff10acfdac33f3d9ffdebdfe5586b09f9d)</h1>
+<h1 class="bar">&nbsp;INTERSHOP IOM 4.0.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision 9d86e47a1bbadbf7d304f45abfd41430db603267)</h1>
 </div>
 
 <h1>Table oms.CommunicationVersionDefDO (Enum)</h1>
@@ -103,17 +103,12 @@ UNIQUE: does don't cover unique constraints and indexes defined on more than one
 <td class="colLast"><code>NOT DEFINED</code>&nbsp;</td>
 </tr>
 
-<tr class="rowColor"><td class="colFirst colAlignRight"><code>oms</code></td><td class="colFirst"><code>migration_miss_InvoicingTransmissionDO.(communicationVersionDefRef)</code>&nbsp;</td>
-<td class="colFirst"><code>CommunicationVersionDefDO.(id)</code>&nbsp;</td> 
-<td class="colLast"><code>NOT DEFINED</code>&nbsp;</td>
-</tr>
-
 <tr class="altColor"><td class="colFirst colAlignRight"><code>oms</code></td><td class="colFirst"><code>OrderTransmissionDO.(communicationVersionDefRef)</code>&nbsp;</td>
 <td class="colFirst"><code>CommunicationVersionDefDO.(id)</code>&nbsp;</td> 
 <td class="colLast"><code>fk_OrderTransmissionDO_communicationVersionDefRef</code>&nbsp;</td>
 </tr>
 
-<tr class="altColor"><td class="colFirst colAlignRight"><code>oms</code></td><td class="colFirst"><code>PaymentNotificationTransmissionDO.(communicationVersionDefRef)</code>&nbsp;</td>
+<tr class="rowColor"><td class="colFirst colAlignRight"><code>oms</code></td><td class="colFirst"><code>PaymentNotificationTransmissionDO.(communicationVersionDefRef)</code>&nbsp;</td>
 <td class="colFirst"><code>CommunicationVersionDefDO.(id)</code>&nbsp;</td> 
 <td class="colLast"><code>NOT DEFINED</code>&nbsp;</td>
 </tr>
@@ -123,12 +118,12 @@ UNIQUE: does don't cover unique constraints and indexes defined on more than one
 <td class="colLast"><code>fk_ResponseTransmissionDO_communicationVersionDefRef</code>&nbsp;</td>
 </tr>
 
-<tr class="rowColor"><td class="colFirst colAlignRight"><code>oms</code></td><td class="colFirst"><code>ReturnAnnouncementTransmissionDO.(communicationVersionDefRef)</code>&nbsp;</td>
+<tr class="altColor"><td class="colFirst colAlignRight"><code>oms</code></td><td class="colFirst"><code>ReturnAnnouncementTransmissionDO.(communicationVersionDefRef)</code>&nbsp;</td>
 <td class="colFirst"><code>CommunicationVersionDefDO.(id)</code>&nbsp;</td> 
 <td class="colLast"><code>NOT DEFINED</code>&nbsp;</td>
 </tr>
 
-<tr class="altColor"><td class="colFirst colAlignRight"><code>oms</code></td><td class="colFirst"><code>ReturnRequestTransmissionDO.(communicationVersionDefRef)</code>&nbsp;</td>
+<tr class="rowColor"><td class="colFirst colAlignRight"><code>oms</code></td><td class="colFirst"><code>ReturnRequestTransmissionDO.(communicationVersionDefRef)</code>&nbsp;</td>
 <td class="colFirst"><code>CommunicationVersionDefDO.(id)</code>&nbsp;</td> 
 <td class="colLast"><code>NOT DEFINED</code>&nbsp;</td>
 </tr>

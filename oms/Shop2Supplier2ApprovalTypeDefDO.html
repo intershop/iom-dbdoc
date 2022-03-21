@@ -13,7 +13,7 @@
 <body>
 
 <div class="topNav">
-<h1 class="bar">&nbsp;INTERSHOP IOM 4.0.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision 2a034bff10acfdac33f3d9ffdebdfe5586b09f9d)</h1>
+<h1 class="bar">&nbsp;INTERSHOP IOM 4.0.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision 9d86e47a1bbadbf7d304f45abfd41430db603267)</h1>
 </div>
 
 <h1>Table oms.Shop2Supplier2ApprovalTypeDefDO</h1>
@@ -67,7 +67,7 @@
 </tr>
 
 <tr id="5" class="rowColor">
-<td class="colFirst"><code><span class="memberNameLink">[[<a href="../oms/ApprovalTypeDefDO.html">ApprovalTypeDefDO</a>]]</span><superscript>[1]</superscript></code></td>
+<td class="colFirst"><code><span class="memberNameLink"><a href="../oms/ApprovalTypeDefDO.html">ApprovalTypeDefDO</a></span></code></td>
 <td class="colOne"><code>approvalTypeDefRef</code></td>
 <td class="colOne"><code>integer</code></td>
 <td class="colOne"><code>NOT_NULL</code></td>
@@ -112,7 +112,7 @@
 </tr>
 
 <tr id="10" class="altColor">
-<td class="colFirst"><code><span class="memberNameLink">[[<a href="../oms/PaymentProviderDO.html">PaymentProviderDO</a>]]</span><superscript>[1]</superscript></code></td>
+<td class="colFirst"><code><span class="memberNameLink"><a href="../oms/PaymentProviderDO.html">PaymentProviderDO</a></span></code></td>
 <td class="colOne"><code>paymentProviderRef</code></td>
 <td class="colOne"><code>bigint</code></td>
 <td class="colOne"><code></code></td>
@@ -206,6 +206,18 @@ Such &quot;missing&quot; foreign keys are denoted with &quot;NOT DEFINED&quot;.
 <td class="colFirst">UNIQUE CONSTRAINT </code></td>
 <td class="colFirst">Shop2Supplier2ApprovalTypeDefDO_shopRef_key</code></td>
 <td class="colLast"><code>UNIQUE ("shopRef", "supplierRef", "approvalTypeDefRef")</code>&nbsp;</td>
+</tr>
+
+<tr class="rowColor">
+<td class="colFirst">FOREIGN KEY </code></td>
+<td class="colFirst">S2S2ApprovalTypeDefDO_appr_fk</code></td>
+<td class="colLast"><code>FOREIGN KEY ("approvalTypeDefRef") REFERENCES "ApprovalTypeDefDO"(id)</code>&nbsp;</td>
+</tr>
+
+<tr class="altColor">
+<td class="colFirst">FOREIGN KEY </code></td>
+<td class="colFirst">S2S2ApprovalTypeDefDO_paym_fk</code></td>
+<td class="colLast"><code>FOREIGN KEY ("paymentProviderRef") REFERENCES "PaymentProviderDO"(id)</code>&nbsp;</td>
 </tr>
 
 <tr class="rowColor">

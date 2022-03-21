@@ -13,7 +13,7 @@
 <body>
 
 <div class="topNav">
-<h1 class="bar">&nbsp;INTERSHOP IOM 4.0.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision 2a034bff10acfdac33f3d9ffdebdfe5586b09f9d)</h1>
+<h1 class="bar">&nbsp;INTERSHOP IOM 4.0.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision 9d86e47a1bbadbf7d304f45abfd41430db603267)</h1>
 </div>
 
 <h1>Table oms.CommunicationDO</h1>
@@ -164,51 +164,51 @@ Such &quot;missing&quot; foreign keys are denoted with &quot;NOT DEFINED&quot;.
 </tr>
 
 <tr class="altColor">
+<td class="colFirst">CHECK CONSTRAINT </code></td>
+<td class="colFirst">chk_CommunicationDO_excecutionBeanDefRef_transmissionFormDefRef</code></td>
+<td class="colLast"><code>CHECK ("transmissionFormDefRef" = 10 AND "executionBeanDefRef" IS NOT NULL OR "transmissionFormDefRef" = 20 AND "executionBeanDefRef" IS NULL)</code>&nbsp;</td>
+</tr>
+
+<tr class="rowColor">
 <td class="colFirst">UNIQUE CONSTRAINT </code></td>
 <td class="colFirst">CommunicationDO_description</code></td>
 <td class="colLast"><code>UNIQUE (key)</code>&nbsp;</td>
 </tr>
 
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst">UNIQUE CONSTRAINT </code></td>
 <td class="colFirst">uk_CommunicationDO_transType_docFormat_execBean_comVersion</code></td>
 <td class="colLast"><code>UNIQUE ("transmissionTypeDefRef", "documentFormatDefRef", "executionBeanDefRef", "communicationVersionDefRef")</code>&nbsp;</td>
 </tr>
 
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst">FOREIGN KEY </code></td>
 <td class="colFirst">DocumentFormatDefDO_fkey</code></td>
 <td class="colLast"><code>FOREIGN KEY ("documentFormatDefRef") REFERENCES "DocumentFormatDefDO"(id)</code>&nbsp;</td>
 </tr>
 
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst">FOREIGN KEY </code></td>
 <td class="colFirst">ExcecutionBeanDefDO_fkey</code></td>
 <td class="colLast"><code>FOREIGN KEY ("executionBeanDefRef") REFERENCES "ExecutionBeanDefDO"(id)</code>&nbsp;</td>
 </tr>
 
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst">FOREIGN KEY </code></td>
 <td class="colFirst">TransmissionDefDO_fkey</code></td>
 <td class="colLast"><code>FOREIGN KEY ("transmissionTypeDefRef") REFERENCES "TransmissionTypeDefDO"(id)</code>&nbsp;</td>
 </tr>
 
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst">FOREIGN KEY </code></td>
 <td class="colFirst">fk_CommunicationDO_communicationVersionDefRef</code></td>
 <td class="colLast"><code>FOREIGN KEY ("communicationVersionDefRef") REFERENCES "CommunicationVersionDefDO"(id)</code>&nbsp;</td>
 </tr>
 
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst">FOREIGN KEY </code></td>
 <td class="colFirst">fk_CommunicationDO_transmissionFormDefRef</code></td>
 <td class="colLast"><code>FOREIGN KEY ("transmissionFormDefRef") REFERENCES "TransmissionFormDefDO"(id)</code>&nbsp;</td>
-</tr>
-
-<tr class="rowColor">
-<td class="colFirst">CHECK CONSTRAINT </code></td>
-<td class="colFirst">chk_CommunicationDO_excecutionBeanDefRef_transmissionFormDefRef</code></td>
-<td class="colLast"><code>CHECK ("transmissionFormDefRef" = 10 AND "executionBeanDefRef" IS NOT NULL OR "transmissionFormDefRef" = 20 AND "executionBeanDefRef" IS NULL)</code>&nbsp;</td>
 </tr>
 
 <tr class="altColor">

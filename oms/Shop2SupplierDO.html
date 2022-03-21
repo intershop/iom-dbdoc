@@ -13,7 +13,7 @@
 <body>
 
 <div class="topNav">
-<h1 class="bar">&nbsp;INTERSHOP IOM 4.0.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision 2a034bff10acfdac33f3d9ffdebdfe5586b09f9d)</h1>
+<h1 class="bar">&nbsp;INTERSHOP IOM 4.0.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision 9d86e47a1bbadbf7d304f45abfd41430db603267)</h1>
 </div>
 
 <h1>Table oms.Shop2SupplierDO</h1>
@@ -320,6 +320,22 @@ Such &quot;missing&quot; foreign keys are denoted with &quot;NOT DEFINED&quot;.
 </tr>
 
 <tr class="altColor">
+<td class="colFirst">CHECK CONSTRAINT </code></td>
+<td class="colFirst">Shop2SupplierDO_ck_stockReduceModel</code></td>
+<td class="colLast"><code>CHECK (("stockReduceModel" = ANY (ARRAY[25::bigint, 50::bigint])) OR "stockReduceModel" IS NULL)</code>&nbsp;</td>
+</tr>
+
+<tr class="rowColor">
+<td class="colFirst">CHECK CONSTRAINT </code></td>
+<td class="colFirst">shop2supplierdo_ck_articl_prefix</code></td>
+<td class="colLast"><code>CHECK (
+CASE
+    WHEN "useSupplierArticleNoAsShopArticleNo" THEN "shopArticleNoPrefix" IS NOT NULL
+    ELSE "shopArticleNoPrefix" IS NULL
+END)</code>&nbsp;</td>
+</tr>
+
+<tr class="altColor">
 <td class="colFirst">UNIQUE CONSTRAINT </code></td>
 <td class="colFirst">Shop2SupplierDO_shopRef_key</code></td>
 <td class="colLast"><code>UNIQUE ("shopRef", "supplierRef")</code>&nbsp;</td>
@@ -359,22 +375,6 @@ Such &quot;missing&quot; foreign keys are denoted with &quot;NOT DEFINED&quot;.
 <td class="colFirst">FOREIGN KEY </code></td>
 <td class="colFirst">fke070c5326812736</code></td>
 <td class="colLast"><code>FOREIGN KEY ("returnCarrierRef") REFERENCES "CarrierDO"(id)</code>&nbsp;</td>
-</tr>
-
-<tr class="rowColor">
-<td class="colFirst">CHECK CONSTRAINT </code></td>
-<td class="colFirst">Shop2SupplierDO_ck_stockReduceModel</code></td>
-<td class="colLast"><code>CHECK (("stockReduceModel" = ANY (ARRAY[25::bigint, 50::bigint])) OR "stockReduceModel" IS NULL)</code>&nbsp;</td>
-</tr>
-
-<tr class="altColor">
-<td class="colFirst">CHECK CONSTRAINT </code></td>
-<td class="colFirst">shop2supplierdo_ck_articl_prefix</code></td>
-<td class="colLast"><code>CHECK (
-CASE
-    WHEN "useSupplierArticleNoAsShopArticleNo" THEN "shopArticleNoPrefix" IS NOT NULL
-    ELSE "shopArticleNoPrefix" IS NULL
-END)</code>&nbsp;</td>
 </tr>
 
 <tr class="rowColor">

@@ -13,7 +13,7 @@
 <body>
 
 <div class="topNav">
-<h1 class="bar">&nbsp;INTERSHOP IOM 4.0.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision 2a034bff10acfdac33f3d9ffdebdfe5586b09f9d)</h1>
+<h1 class="bar">&nbsp;INTERSHOP IOM 4.0.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision 9d86e47a1bbadbf7d304f45abfd41430db603267)</h1>
 </div>
 
 <h1>Table oms.PlatformConfigPropertyDO</h1>
@@ -109,18 +109,6 @@ UNIQUE: does don't cover unique constraints and indexes defined on more than one
 </tr>
 
 <tr class="altColor">
-<td class="colFirst">UNIQUE CONSTRAINT </code></td>
-<td class="colFirst">PlatformConfigPropertyDO_uk</code></td>
-<td class="colLast"><code>UNIQUE (key)</code>&nbsp;</td>
-</tr>
-
-<tr class="rowColor">
-<td class="colFirst">FOREIGN KEY </code></td>
-<td class="colFirst">PlatformConfigPropertyDO_fk</code></td>
-<td class="colLast"><code>FOREIGN KEY ("platformConfigRef") REFERENCES "PlatformConfigDO"(id)</code>&nbsp;</td>
-</tr>
-
-<tr class="altColor">
 <td class="colFirst">CHECK CONSTRAINT </code></td>
 <td class="colFirst">PlatformConfigPropertyDO_ck1</code></td>
 <td class="colLast"><code>CHECK ("platformConfigRef" = 1)</code>&nbsp;</td>
@@ -130,6 +118,18 @@ UNIQUE: does don't cover unique constraints and indexes defined on more than one
 <td class="colFirst">CHECK CONSTRAINT </code></td>
 <td class="colFirst">PlatformConfigPropertyDO_ck2</code></td>
 <td class="colLast"><code>CHECK (validate IS NULL OR value ~ validate)</code>&nbsp;</td>
+</tr>
+
+<tr class="altColor">
+<td class="colFirst">UNIQUE CONSTRAINT </code></td>
+<td class="colFirst">PlatformConfigPropertyDO_uk</code></td>
+<td class="colLast"><code>UNIQUE (key)</code>&nbsp;</td>
+</tr>
+
+<tr class="rowColor">
+<td class="colFirst">FOREIGN KEY </code></td>
+<td class="colFirst">PlatformConfigPropertyDO_fk</code></td>
+<td class="colLast"><code>FOREIGN KEY ("platformConfigRef") REFERENCES "PlatformConfigDO"(id)</code>&nbsp;</td>
 </tr>
 </tr>
 </tbody></table>
