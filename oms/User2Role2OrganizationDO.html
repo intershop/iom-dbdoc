@@ -13,7 +13,7 @@
 <body>
 
 <div class="topNav">
-<h1 class="bar">&nbsp;INTERSHOP IOM 4.0.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision a5adc10c702791825f67fd04aaf71453a5e4a64f)</h1>
+<h1 class="bar">&nbsp;INTERSHOP IOM 4.0.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision e42f293ff0726495e7918abd2f83ddfc4f242018)</h1>
 </div>
 
 <h1>Table oms.User2Role2OrganizationDO</h1>
@@ -49,7 +49,7 @@
 </tr>
 
 <tr id="3" class="rowColor">
-<td class="colFirst"><code>RoleDO</code><code><span class="memberNameLink"><a href="../oms/User2RoleDO.html">User2RoleDO</a></span>(2x)</code></td>
+<td class="colFirst"><code><span class="memberNameLink"><a href="../oms/User2RoleDO.html">User2RoleDO</a></span>(2x)</code><code>[[RoleDO]]</code></td>
 <td class="colOne"><code>roleRef</code></td>
 <td class="colOne"><code>bigint</code></td>
 <td class="colOne"><code>NOT_NULL</code></td>
@@ -58,7 +58,7 @@
 </tr>
 
 <tr id="4" class="altColor">
-<td class="colFirst"><code><span class="memberNameLink"><a href="../oms/User2RoleDO.html">User2RoleDO</a></span>(2x)</code><code><span class="memberNameLink"><a href="../oms/UserDO.html">UserDO</a></span></code></td>
+<td class="colFirst"><code><span class="memberNameLink"><a href="../oms/User2RoleDO.html">User2RoleDO</a></span>(2x)</code><code><span class="memberNameLink">[[<a href="../oms/UserDO.html">UserDO</a>]]</span><superscript>[1]</superscript></code></td>
 <td class="colOne"><code>userRef</code></td>
 <td class="colOne"><code>bigint</code></td>
 <td class="colOne"><code>NOT_NULL</code></td>
@@ -140,20 +140,8 @@ UNIQUE: does don't cover unique constraints and indexes defined on more than one
 
 <tr class="altColor">
 <td class="colFirst">FOREIGN KEY </code></td>
-<td class="colFirst">User2Role2OrganizationDO_fk_role</code></td>
-<td class="colLast"><code>FOREIGN KEY ("roleRef") REFERENCES "RoleDO"(id)</code>&nbsp;</td>
-</tr>
-
-<tr class="rowColor">
-<td class="colFirst">FOREIGN KEY </code></td>
 <td class="colFirst">User2Role2OrganizationDO_fk_u2r</code></td>
 <td class="colLast"><code>FOREIGN KEY ("roleRef", "userRef") REFERENCES "User2RoleDO"("roleRef", "userRef")</code>&nbsp;</td>
-</tr>
-
-<tr class="altColor">
-<td class="colFirst">FOREIGN KEY </code></td>
-<td class="colFirst">User2Role2OrganizationDO_fk_user</code></td>
-<td class="colLast"><code>FOREIGN KEY ("userRef") REFERENCES "UserDO"(id)</code>&nbsp;</td>
 </tr>
 
 <tr class="rowColor">
