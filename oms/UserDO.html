@@ -14,11 +14,11 @@
 <body>
 
 <div class="topNav">
-<h1 class="bar">&nbsp;INTERSHOP IOM 4.0.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision 8dfa48671f5e076f680e096ab655800197e36365)</h1>
+<h1 class="bar">&nbsp;INTERSHOP IOM 4.0.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision feb7a15a915e3b51bb57109256e50ce322d91d08)</h1>
 </div>
 
 <h1>Table oms.UserDO</h1>
-
+<h5>OMS users with their credentials (services and OMT users).</h5>
 <table class="memberSummary" cellspacing="0" cellpadding="3" border="0">
 <h2>Columns</span><span class="tabEnd">&nbsp;</h2>
 <tbody>
@@ -46,7 +46,7 @@
 <td class="colOne"><code>varchar(255)</code></td>
 <td class="colOne"><code>NOT_NULL</code></td>
 <td class="colOne"><code></code></td>
-<td class="colLast"><code></code>&nbsp;</td>
+<td class="colLast"><code>login name</code>&nbsp;</td>
 </tr>
 
 <tr id="3" class="rowColor">
@@ -55,7 +55,7 @@
 <td class="colOne"><code>boolean</code></td>
 <td class="colOne"><code>NOT_NULL</code></td>
 <td class="colOne"><code></code></td>
-<td class="colLast"><code></code>&nbsp;</td>
+<td class="colLast"><code>users can be temporarily deactivated.</code>&nbsp;</td>
 </tr>
 
 <tr id="4" class="altColor">
@@ -117,8 +117,8 @@
 <td class="colOne"><code>uniformRoleConf</code></td>
 <td class="colOne"><code>boolean</code></td>
 <td class="colOne"><code>NOT_NULL</code></td>
-<td class="colOne"><code></code></td>
-<td class="colLast"><code></code>&nbsp;</td>
+<td class="colOne"><code>false</code></td>
+<td class="colLast"><code><span class="deprecated">Deprecated</span></code>&nbsp;</td>
 </tr>
 
 <tr id="11" class="rowColor">
@@ -127,7 +127,7 @@
 <td class="colOne"><code>integer</code></td>
 <td class="colOne"><code></code></td>
 <td class="colOne"><code></code></td>
-<td class="colLast"><code></code>&nbsp;</td>
+<td class="colLast"><code>jpa internal version control.</code>&nbsp;</td>
 </tr>
 
 <tr id="12" class="altColor">
@@ -145,7 +145,7 @@
 <td class="colOne"><code>varchar(255)</code></td>
 <td class="colOne"><code></code></td>
 <td class="colOne"><code></code></td>
-<td class="colLast"><code></code>&nbsp;</td>
+<td class="colLast"><code>Managed in code, cannot be generated from otside</code>&nbsp;</td>
 </tr>
 
 <tr id="14" class="altColor">
@@ -154,7 +154,7 @@
 <td class="colOne"><code>varchar(255)</code></td>
 <td class="colOne"><code></code></td>
 <td class="colOne"><code></code></td>
-<td class="colLast"><code></code>&nbsp;</td>
+<td class="colLast"><code>Managed in code, cannot be generated from otside</code>&nbsp;</td>
 </tr>
 
 <tr id="15" class="rowColor">
@@ -163,7 +163,7 @@
 <td class="colOne"><code>timestamp without time zone</code></td>
 <td class="colOne"><code></code></td>
 <td class="colOne"><code></code></td>
-<td class="colLast"><code></code>&nbsp;</td>
+<td class="colLast"><code>Users are considered deleted when set.(Users cannot really be deleted as there may be many references on them).</code>&nbsp;</td>
 </tr>
 
 <tr id="16" class="altColor">
@@ -172,7 +172,7 @@
 <td class="colOne"><code>integer</code></td>
 <td class="colOne"><code></code></td>
 <td class="colOne"><code>1</code></td>
-<td class="colLast"><code></code>&nbsp;</td>
+<td class="colLast"><code>javax inheritance discriminator. Make sure to only use the default value.</code>&nbsp;</td>
 </tr></tbody></table>
 <p />
 [1] Not all references are enforced by a foreign key where they could.<br />
