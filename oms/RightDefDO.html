@@ -14,7 +14,7 @@
 <body>
 
 <div class="topNav">
-<h1 class="bar">&nbsp;INTERSHOP IOM 4.0.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision feb7a15a915e3b51bb57109256e50ce322d91d08)</h1>
+<h1 class="bar">&nbsp;INTERSHOP IOM 4.0.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision 0ed4b95ccd823e2cab8a4027e36aa4e52b4e99b8)</h1>
 </div>
 
 <h1>Table oms.RightDefDO (Enum)</h1>
@@ -370,7 +370,7 @@ Such &quot;missing&quot; foreign keys are denoted with &quot;NOT DEFINED&quot;.
 <tr class="altColor"><td>58</td><td>Display the return label on the order detail page.</td><td>View return label</td><td>1</td><td>false</td><td>tb.right.get.return.label</td></tr>
 <tr class="rowColor"><td>59</td><td>Currently not used. Planned for creating a shop configuration.</td><td>Create shop configuration</td><td>2</td><td>false</td><td>tb.right.create.shop</td></tr>
 <tr class="altColor"><td>60</td><td>Currently not used. Planned for editing an existing shop configuration.</td><td>Edit shop configuration</td><td>2</td><td>false</td><td>tb.right.edit.shop</td></tr>
-<tr class="rowColor"><td>61</td><td>Allows OMT users to edit their own profile.</td><td>Edit Profile</td><td>2</td><td>false</td><td>tb.right.edit.omtuser</td></tr>
+<tr class="rowColor"><td>61</td><td>Allows OMT users to edit their own profile. Unimplemented yet</td><td>Edit Profile</td><td>2</td><td>false</td><td>tb.right.edit.omtuser</td></tr>
 <tr class="altColor"><td>62</td><td>Currently not used. Was planned for the order search, which is now covered with the View order permission.</td><td>Order search</td><td>1</td><td>false</td><td>tb.right.view.order.search</td></tr>
 <tr class="rowColor"><td>63</td><td>Display the status group In approval in the advanced order search, find orders with the status In approval in the order search, display the detail page of orders with the status In approval, display the report "Orders in approval".</td><td>Order status group In approval</td><td>1</td><td>false</td><td>tb.right.view.order.on.approval</td></tr>
 <tr class="altColor"><td>64</td><td>Allows to create an approval message for an order.</td><td>Create approval message</td><td>1</td><td>false</td><td>tb.right.create.approvalresponse</td></tr>
@@ -390,7 +390,7 @@ Such &quot;missing&quot; foreign keys are denoted with &quot;NOT DEFINED&quot;.
 <tr class="altColor"><td>78</td><td>Display the add button on the customer data page.</td><td>Create customer contact history entry</td><td>1</td><td>false</td><td>tb.right.create.customer.contact</td></tr>
 <tr class="rowColor"><td>79</td><td>Direct product search, display product details.</td><td>View product data</td><td>4</td><td>true</td><td>tb.right.view.article</td></tr>
 <tr class="altColor"><td>80</td><td>Currently not used. Planned for managing and manually starting business processes.</td><td>Manage business processes</td><td>2</td><td>false</td><td>tb.right.start.control.jobs</td></tr>
-<tr class="rowColor"><td>81</td><td>Loads deactivated shops and suppliers upon login according to the current users permissions.</td><td>Show deactivated shops/suppliers</td><td>2</td><td>true</td><td>tb.right.inactive.shops.supplier</td></tr>
+<tr class="rowColor"><td>81</td><td>Deprecated, will be removed.</td><td>Show deactivated shops/suppliers</td><td>2</td><td>true</td><td>tb.right.inactive.shops.supplier</td></tr>
 <tr class="altColor"><td>82</td><td>Display the transmision objects on the order detail page.</td><td>View transmission objects</td><td>2</td><td>true</td><td>tb.right.view.transmissions</td></tr>
 <tr class="rowColor"><td>83</td><td>Display the Failed transmissions link in the tasks menu.</td><td>Failed transmissions</td><td>2</td><td>true</td><td>tb.right.view.failed.transmissions</td></tr>
 <tr class="altColor"><td>84</td><td>Display the Resend button for already sent transmision objects on the order detail page.</td><td>Resend transmission objects</td><td>2</td><td>true</td><td>tb.right.edit.transmissions</td></tr>
@@ -399,8 +399,8 @@ Such &quot;missing&quot; foreign keys are denoted with &quot;NOT DEFINED&quot;.
 <tr class="rowColor"><td>87</td><td>Allows to edit product master data, shop/supplier specific product data.</td><td>Edit product data</td><td>4</td><td>true</td><td>tb.right.edit.article</td></tr>
 <tr class="altColor"><td>88</td><td>Create new user account, modify user data, reset login data.</td><td>Manage users</td><td>2</td><td>true</td><td>tb.right.admin.user</td></tr>
 <tr class="rowColor"><td>89</td><td>In case a supplier cancels an order item, the user can select a new supplier.</td><td>Change product supplier</td><td>2</td><td>false</td><td>tb.right.change.supplier</td></tr>
-<tr class="altColor"><td>90</td><td>View supplier list and detailed supplier configuration.</td><td>View supplier configuration</td><td>2</td><td>true</td><td>tb.right.view.supplier</td></tr>
-<tr class="rowColor"><td>91</td><td>Edit supplier configuration.</td><td>Edit supplier configuration</td><td>2</td><td>true</td><td>tb.right.edit.supplier</td></tr>
+<tr class="altColor"><td>90</td><td>Unused for now. View supplier list and detailed supplier configuration.</td><td>View supplier configuration</td><td>2</td><td>true</td><td>tb.right.view.supplier</td></tr>
+<tr class="rowColor"><td>91</td><td>Unused for now. Edit supplier configuration.</td><td>Edit supplier configuration</td><td>2</td><td>true</td><td>tb.right.edit.supplier</td></tr>
 <tr class="altColor"><td>95</td><td>Allows to view order message logs.</td><td>View order message logs</td><td>2</td><td>false</td><td>tb.right.view.messagelog</td></tr>
 <tr class="rowColor"><td>96</td><td>Edit product assignments.</td><td>Edit product assignments</td><td>4</td><td>true</td><td>tb.right.edit.article.assignments</td></tr>
 <tr class="altColor"><td>97</td><td>Edit commodity group-product mapping.</td><td>Edit commodity group-product mapping</td><td>4</td><td>true</td><td>tb.right.edit.article.assortments</td></tr>
@@ -412,7 +412,7 @@ Such &quot;missing&quot; foreign keys are denoted with &quot;NOT DEFINED&quot;.
 <tr class="altColor"><td>103</td><td>Edit DONE, RETRY, CANCEL payment transmissions failed in the system.</td><td>Edit failed payment transmissions</td><td>2</td><td>true</td><td>tb.right.edit.failured.payment.transmission</td></tr>
 <tr class="rowColor"><td>104</td><td>Search and display editable payment notifications to be approved manually.</td><td>Show payments to be approved</td><td>2</td><td>true</td><td>tb.right.view.payment.do.approve</td></tr>
 <tr class="altColor"><td>105</td><td>Approve/reject refund.</td><td>Approve/reject refund</td><td>2</td><td>true</td><td>tb.right.approve.payment.actions</td></tr>
-<tr class="rowColor"><td>106</td><td>Search defective receipt messages.</td><td>Search defective receipt messages</td><td>1</td><td>false</td><td>tb.right.search.responses.not.checked</td></tr>
+<tr class="rowColor"><td>106</td><td>Unused Search defective receipt messages.</td><td>Search defective receipt messages</td><td>1</td><td>false</td><td>tb.right.search.responses.not.checked</td></tr>
 <tr class="altColor"><td>107</td><td>Edit receipt message.</td><td>Edit receipt message</td><td>1</td><td>false</td><td>tb.right.edit.response</td></tr>
 <tr class="rowColor"><td>108</td><td>Show process status history.</td><td>Show process status history</td><td>1</td><td>false</td><td>tb.right.view.process.state.histories</td></tr>
 <tr class="altColor"><td>109</td><td>Edit return message.</td><td>Edit return message</td><td>1</td><td>false</td><td>tb.right.edit.return</td></tr>
