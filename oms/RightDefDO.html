@@ -5,6 +5,7 @@
 <title>Table oms.RightDefDO</title>
 <meta charset="UTF-8"/>
 <meta name="date" content="2022-03-25"/>
+<meta name="oid" content="19367"/>
 <link rel="stylesheet" type="text/css" href="../stylesheet.css"/>
 <link rel="stylesheet" type="text/css" href="../dbdoc.css"/>
 <script type="text/javascript" src="../script.js"></script>
@@ -13,11 +14,11 @@
 <body>
 
 <div class="topNav">
-<h1 class="bar">&nbsp;INTERSHOP IOM 4.0.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision 33889cde1d2937f62a358898f881fc0a5db9c4cc)</h1>
+<h1 class="bar">&nbsp;INTERSHOP IOM 4.0.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision 8dfa48671f5e076f680e096ab655800197e36365)</h1>
 </div>
 
 <h1>Table oms.RightDefDO (Enum)</h1>
-
+<h5>Fine granular list of the different access permissions. RightDO cannot be assigned to user directly, they must first be grouped in RoleDOs.</h5>
 <table class="memberSummary" cellspacing="0" cellpadding="3" border="0">
 <h2>Columns</span><span class="tabEnd">&nbsp;</h2>
 <tbody>
@@ -72,7 +73,7 @@
 <td class="colOne"><code>boolean</code></td>
 <td class="colOne"><code>NOT_NULL</code></td>
 <td class="colOne"><code>false</code></td>
-<td class="colLast"><code></code>&nbsp;</td>
+<td class="colLast"><code>Only used in combination with the special Supplier "All Supplier", to be deprecated.</code>&nbsp;</td>
 </tr>
 
 <tr id="6" class="altColor">
@@ -243,7 +244,7 @@ UNIQUE: does don't cover unique constraints and indexes defined on more than one
 <td class="colLast"><code>RetrnTransmissinStatesGropDefDO_fk_RightDefDO</code>&nbsp;</td>
 </tr>
 
-<tr class="rowColor"><td class="colFirst colAlignRight"><code>oms</code></td><td class="colFirst"><code>Role2RightDO.(rightDefRef)</code>&nbsp;</td>
+<tr class="rowColor"><td class="colFirst colAlignRight"><code>oms</code></td><td class="colFirst"><code><span class="memberNameLink"><a href="../oms/Role2RightDO.html">Role2RightDO</a></span>.(rightDefRef)</code>&nbsp;</td>
 <td class="colFirst"><code>RightDefDO.(id)</code>&nbsp;</td> 
 <td class="colLast"><code>rightDefRefRole2RightDO</code>&nbsp;</td>
 </tr>

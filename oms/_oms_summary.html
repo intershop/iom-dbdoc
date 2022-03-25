@@ -10,7 +10,7 @@
 <body>
 
 <div class="topNav">
-<h1 class="bar">&nbsp;INTERSHOP IOM 4.0.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision 33889cde1d2937f62a358898f881fc0a5db9c4cc)</h1>
+<h1 class="bar">&nbsp;INTERSHOP IOM 4.0.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision 8dfa48671f5e076f680e096ab655800197e36365)</h1>
 </div>
 
 <h1>Schema oms</h1>
@@ -374,12 +374,22 @@ A user that have a given role in a given organization have the same correspondin
 </tr>
 <tr id="19367" class="altColor">
        <td class="colFirst"><code><span class="memberNameLink"><a href="RightDefDO.html" target="classFrame">RightDefDO</a></span></code>&nbsp;</td>
-       <td class="colLast"><code>&nbsp;</td>
+       <td class="colLast"><code>Fine granular list of the different access permissions. RightDO cannot be assigned to user directly, they must first be grouped in RoleDOs.&nbsp;</td>
        
 </tr>
 <tr id="19375" class="rowColor">
        <td class="colFirst"><code><span class="memberNameLink"><a href="RightGroupDefDO.html" target="classFrame">RightGroupDefDO</a></span></code>&nbsp;</td>
-       <td class="colLast"><code>&nbsp;</td>
+       <td class="colLast"><code>List of groups to categorize the rightDO, as seen in OMT. Each RightDO belongs to exactly one RightGroupDefDO.&nbsp;</td>
+       
+</tr>
+<tr id="19380" class="altColor">
+       <td class="colFirst"><code><span class="memberNameLink"><a href="Role2RightDO.html" target="classFrame">Role2RightDO</a></span></code>&nbsp;</td>
+       <td class="colLast"><code>List of rights assigned to the different roles. This mapping can be performed in OMT.&nbsp;</td>
+       
+</tr>
+<tr id="19384" class="rowColor">
+       <td class="colFirst"><code><span class="memberNameLink"><a href="RoleDO.html" target="classFrame">RoleDO</a></span></code>&nbsp;</td>
+       <td class="colLast"><code>RoleDOs are used to define collections of rights(permissions). User can only have permissions through role assignments. These roles are all accessible and editable in OMT.&nbsp;</td>
        
 </tr>
 <tr id="19393" class="altColor">
@@ -647,7 +657,7 @@ A user that have a given role in a given organization have the same correspondin
 </tr>
 <tr id="19957" class="rowColor">
        <td class="colFirst"><code><span class="memberNameLink"><a href="User2RoleDO.html" target="classFrame">User2RoleDO</a></span></code>&nbsp;</td>
-       <td class="colLast"><code>&nbsp;</td>
+       <td class="colLast"><code>List of roles per user. This table is like a reduced view of User2Role2OrganizationDO and does not need to be considered. Its content is maintained through triggers.&nbsp;</td>
        
 </tr>
 <tr id="19976" class="altColor">
