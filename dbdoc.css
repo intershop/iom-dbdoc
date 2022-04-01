@@ -1,0 +1,75 @@
+/* DBDoc stylesheet */
+/*
+	Replacements for the default stylesheet
+*/
+
+body {
+	padding: 10px;
+}
+
+h3 {
+	font-style: normal;	
+}
+
+p {
+	font-size: 12px;
+}
+
+.topNav {
+	float: none;
+}
+
+th.colOne,
+th.colFirst,
+th.colLast,
+.useSummary th,
+.constantsSummary th,
+td.colOne,
+td.colFirst,
+td.colLast,
+.useSummary td,
+.constantsSummary td {
+    padding: 5px;
+}
+
+.overviewSummary td,
+.memberSummary td,
+.typeSummary td,
+.useSummary td,
+.constantsSummary td,
+.deprecatedSummary td {
+    padding: 5px;
+}
+
+.overviewSummary caption span,
+.memberSummary caption span,
+.typeSummary caption span,
+.useSummary caption span,
+.constantsSummary caption span,
+.deprecatedSummary caption span {
+	background-color: #4D7A97;
+	color: #FFFFFF;
+	padding: 5px;
+}
+
+.overviewSummary td.colFirst,
+.overviewSummary th.colFirst,
+.useSummary td.colFirst,
+.useSummary th.colFirst,
+.overviewSummary td.colOne,
+.overviewSummary th.colOne,
+.memberSummary td.colFirst,
+.memberSummary th.colFirst,
+.memberSummary td.colOne,
+.memberSummary th.colOne,
+.typeSummary td.colFirst {
+    width: 0%;
+}
+
+.colAlignRight {
+	text-align: right !important;
+}
+
+.colAlignLeft {
+	text-align: left !important;
+}
