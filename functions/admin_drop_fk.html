@@ -21,7 +21,16 @@
 </tr>
 
 <tr id="16427" class="rowColor">
-       <td class="colFirst"><h5><div style=" white-space: pre-wrap;"></div></h5>
+       <td class="colFirst"><h5><div style=" white-space: pre-wrap;">Delete a foreign key between table, if such a FK between the given column references does exist.
+Always return true.
+Example:
+select admin.drop_fk('oms',
+                    'PaymentActionApprovalDefDO',
+                    ARRAY['paymentNotificationActionDefRef'],
+                    'oms',
+                    'PaymentNotificationActionDefDO',
+                    ARRAY ['id']);
+</div></h5>
        <br/><code><div style="white-space: pre-wrap; font-family: monospace;">FUNCTION admin.drop_fk
 ( from_tblsp     text,
   from_table     text,
