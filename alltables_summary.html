@@ -12,7 +12,7 @@
 <body>
 
 <div class="topNav">
-<h1 class="bar">&nbsp;INTERSHOP IOM 4.1.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision 1753deeae7f82d144e37160592ed69ae51b7b074)</h1>
+<h1 class="bar">&nbsp;INTERSHOP IOM 4.1.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision b5ae1eda615001f0cff1dbb1c49a1b79ae729a24)</h1>
 </div>
 
 <h1>All tables</h1>
@@ -74,7 +74,7 @@ The caches should be cleared after any configuration change (see function oms.cl
 <tr id="17373" class="rowColor">
        <td class="colLast colAlignRight"><code>oms&nbsp;</td>
        <td class="colFirst"><code><span class="memberNameLink"><a href="oms/ChargeTypeDefDO.html" target="classFrame">ChargeTypeDefDO</a></span></code>&nbsp;</td>
-       <td class="colLast"><code>Types of charges that are supported from the platform by default, e.g. "Delivery Charge".&nbsp;</td>
+       <td class="colLast"><code>List the different charge types available by default.&nbsp;</td>
        
 </tr>
 <tr id="17384" class="altColor">
@@ -140,7 +140,7 @@ The caches should be cleared after any configuration change (see function oms.cl
 <tr id="17466" class="rowColor">
        <td class="colLast colAlignRight"><code>oms&nbsp;</td>
        <td class="colFirst"><code><span class="memberNameLink"><a href="oms/DeliveryTypeDefDO.html" target="classFrame">DeliveryTypeDefDO</a></span></code>&nbsp;</td>
-       <td class="colLast"><code>Delivery types, e.g. "Standard".&nbsp;</td>
+       <td class="colLast"><code>Delivery types describe expected delivery times. The types EARLIEST and FIXED are not listed here as they depend on a date.&nbsp;</td>
        
 </tr>
 <tr id="17642" class="altColor">
@@ -379,13 +379,13 @@ A user that have a given role in a given organization have the same correspondin
 <tr id="18622" class="altColor">
        <td class="colLast colAlignRight"><code>oms&nbsp;</td>
        <td class="colFirst"><code><span class="memberNameLink"><a href="oms/PaymentDefDO.html" target="classFrame">PaymentDefDO</a></span></code>&nbsp;</td>
-       <td class="colLast"><code>Payment methods that are supported from the application by default, e.g. "cash on account".&nbsp;</td>
+       <td class="colLast"><code>Available payment methods. Some of them may be used only as gouping reference. E.g.: "credit card"&nbsp;</td>
        
 </tr>
 <tr id="18631" class="rowColor">
        <td class="colLast colAlignRight"><code>oms&nbsp;</td>
        <td class="colFirst"><code><span class="memberNameLink"><a href="oms/PaymentEventDefDO.html" target="classFrame">PaymentEventDefDO</a></span></code>&nbsp;</td>
-       <td class="colLast"><code>&nbsp;</td>
+       <td class="colLast"><code>used as refeference to the CreatePaymentNotificationPC ProcessController&nbsp;</td>
        
 </tr>
 <tr id="18634" class="altColor">
@@ -523,7 +523,7 @@ A user that have a given role in a given organization have the same correspondin
 <tr id="19445" class="rowColor">
        <td class="colLast colAlignRight"><code>oms&nbsp;</td>
        <td class="colFirst"><code><span class="memberNameLink"><a href="oms/Shop2ChargeTypeDefDO.html" target="classFrame">Shop2ChargeTypeDefDO</a></span></code>&nbsp;</td>
-       <td class="colLast"><code>Charge type naming as used by the shop instead of defaults.&nbsp;</td>
+       <td class="colLast"><code>Shop specific charge type names.&nbsp;</td>
        
 </tr>
 <tr id="19455" class="altColor">
@@ -544,160 +544,161 @@ A user that have a given role in a given organization have the same correspondin
        <td class="colLast"><code>Delivery option naming as used by a shop instead of defaults.&nbsp;</td>
        
 </tr>
-<tr id="19490" class="rowColor">
+<tr id="19475" class="rowColor">
+       <td class="colLast colAlignRight"><code>oms&nbsp;</td>
+       <td class="colFirst"><code><span class="memberNameLink"><a href="oms/Shop2DeliveryTypeDefDO.html" target="classFrame">Shop2DeliveryTypeDefDO</a></span></code>&nbsp;</td>
+       <td class="colLast"><code>Only use to map the Express delivery type to the shops. Other types are always available, their mapping is implicit.&nbsp;</td>
+       
+</tr>
+<tr id="19490" class="altColor">
        <td class="colLast colAlignRight"><code>oms&nbsp;</td>
        <td class="colFirst"><code><span class="memberNameLink"><a href="oms/Shop2FinanceControllerDO.html" target="classFrame">Shop2FinanceControllerDO</a></span></code>&nbsp;</td>
        <td class="colLast"><code>Finance controllers (debtor management systems) that should be used by a shop.&nbsp;</td>
        
 </tr>
-<tr id="19512" class="altColor">
+<tr id="19512" class="rowColor">
        <td class="colLast colAlignRight"><code>oms&nbsp;</td>
        <td class="colFirst"><code><span class="memberNameLink"><a href="oms/Shop2OrderOptimizeDefDO.html" target="classFrame">Shop2OrderOptimizeDefDO</a></span></code>&nbsp;</td>
        <td class="colLast"><code>Per shop definition of which order optimizations must be used.&nbsp;</td>
        
 </tr>
-<tr id="19517" class="rowColor">
+<tr id="19517" class="altColor">
        <td class="colLast colAlignRight"><code>oms&nbsp;</td>
        <td class="colFirst"><code><span class="memberNameLink"><a href="oms/Shop2OrderPosStatesDefDO.html" target="classFrame">Shop2OrderPosStatesDefDO</a></span></code>&nbsp;</td>
        <td class="colLast"><code>Order position state naming as used by the shop instead of defaults.&nbsp;</td>
        
 </tr>
-<tr id="19522" class="altColor">
+<tr id="19522" class="rowColor">
        <td class="colLast colAlignRight"><code>oms&nbsp;</td>
        <td class="colFirst"><code><span class="memberNameLink"><a href="oms/Shop2OrderStatesDefDO.html" target="classFrame">Shop2OrderStatesDefDO</a></span></code>&nbsp;</td>
        <td class="colLast"><code>Order state naming as used by the shop instead of defaults.&nbsp;</td>
        
 </tr>
-<tr id="19527" class="rowColor">
+<tr id="19527" class="altColor">
        <td class="colLast colAlignRight"><code>oms&nbsp;</td>
        <td class="colFirst"><code><span class="memberNameLink"><a href="oms/Shop2OrderSupplierEvaluationRuleDefDO.html" target="classFrame">Shop2OrderSupplierEvaluationRuleDefDO</a></span></code>&nbsp;</td>
        <td class="colLast"><code>Evaluation rules that should be used in the DOSE-process for supplier selection for a shop.&nbsp;</td>
        
 </tr>
-<tr id="19532" class="altColor">
+<tr id="19532" class="rowColor">
        <td class="colLast colAlignRight"><code>oms&nbsp;</td>
        <td class="colFirst"><code><span class="memberNameLink"><a href="oms/Shop2OrderValidationRuleDefDO.html" target="classFrame">Shop2OrderValidationRuleDefDO</a></span></code>&nbsp;</td>
        <td class="colLast"><code>Validation rules for an incoming order that should be used for a shop.&nbsp;</td>
        
 </tr>
-<tr id="19537" class="rowColor">
+<tr id="19537" class="altColor">
        <td class="colLast colAlignRight"><code>oms&nbsp;</td>
        <td class="colFirst"><code><span class="memberNameLink"><a href="oms/Shop2PaymentDefDO.html" target="classFrame">Shop2PaymentDefDO</a></span></code>&nbsp;</td>
-       <td class="colLast"><code>Payment method that should be used by a shop.&nbsp;</td>
+       <td class="colLast"><code>Payment methods supported by the shop and some shop specific configurations.
+	By payment lookup, e.g. using the payment method name in an order, there may be a fallback on the paymentName in PaymentDefDO, but only when the shop is mapped to the especial NO_PAYMENT method.&nbsp;</td>
        
 </tr>
-<tr id="19543" class="altColor">
+<tr id="19543" class="rowColor">
        <td class="colLast colAlignRight"><code>oms&nbsp;</td>
        <td class="colFirst"><code><span class="memberNameLink"><a href="oms/Shop2PaymentProvider2PaymentDefDO.html" target="classFrame">Shop2PaymentProvider2PaymentDefDO</a></span></code>&nbsp;</td>
        <td class="colLast"><code>Payment providers and payment method that should be used by a shop&nbsp;</td>
        
 </tr>
-<tr id="19548" class="rowColor">
+<tr id="19548" class="altColor">
        <td class="colLast colAlignRight"><code>oms&nbsp;</td>
        <td class="colFirst"><code><span class="memberNameLink"><a href="oms/Shop2ReductionUnitDefDO.html" target="classFrame">Shop2ReductionUnitDefDO</a></span></code>&nbsp;</td>
        <td class="colLast"><code>Reduction unit naming as used by a shop-supplier relation instead of defaults.&nbsp;</td>
        
 </tr>
-<tr id="19553" class="altColor">
+<tr id="19553" class="rowColor">
        <td class="colLast colAlignRight"><code>oms&nbsp;</td>
        <td class="colFirst"><code><span class="memberNameLink"><a href="oms/Shop2ResponseStateCodeDefDO.html" target="classFrame">Shop2ResponseStateCodeDefDO</a></span></code>&nbsp;</td>
        <td class="colLast"><code>Response state code naming as used by a shop instead of defaults.&nbsp;</td>
        
 </tr>
-<tr id="19563" class="rowColor">
+<tr id="19563" class="altColor">
        <td class="colLast colAlignRight"><code>oms&nbsp;</td>
        <td class="colFirst"><code><span class="memberNameLink"><a href="oms/Shop2ReturnReason2ApprovalStateCodeReasonDefDO.html" target="classFrame">Shop2ReturnReason2ApprovalStateCodeReasonDefDO</a></span></code>&nbsp;</td>
        <td class="colLast"><code>Relation of return reason and approval state codes reasons that should b used by a shop.&nbsp;</td>
        
 </tr>
-<tr id="19568" class="altColor">
+<tr id="19568" class="rowColor">
        <td class="colLast colAlignRight"><code>oms&nbsp;</td>
        <td class="colFirst"><code><span class="memberNameLink"><a href="oms/Shop2ReturnReasonDefDO.html" target="classFrame">Shop2ReturnReasonDefDO</a></span></code>&nbsp;</td>
        <td class="colLast"><code>Return reason naming as used by a shop instead of defaults.&nbsp;</td>
        
 </tr>
-<tr id="19579" class="rowColor">
+<tr id="19579" class="altColor">
        <td class="colLast colAlignRight"><code>oms&nbsp;</td>
        <td class="colFirst"><code><span class="memberNameLink"><a href="oms/Shop2ReturnStatesDefDO.html" target="classFrame">Shop2ReturnStatesDefDO</a></span></code>&nbsp;</td>
        <td class="colLast"><code>Return state naming as used by a shop instead of defaults.&nbsp;</td>
        
 </tr>
-<tr id="19584" class="altColor">
+<tr id="19584" class="rowColor">
        <td class="colLast colAlignRight"><code>oms&nbsp;</td>
        <td class="colFirst"><code><span class="memberNameLink"><a href="oms/Shop2ReturnTypeDefDO.html" target="classFrame">Shop2ReturnTypeDefDO</a></span></code>&nbsp;</td>
        <td class="colLast"><code>Return types that should be used by a shop.&nbsp;</td>
        
 </tr>
-<tr id="19598" class="rowColor">
+<tr id="19598" class="altColor">
        <td class="colLast colAlignRight"><code>oms&nbsp;</td>
        <td class="colFirst"><code><span class="memberNameLink"><a href="oms/Shop2Supplier2ApprovalTypeDefDO.html" target="classFrame">Shop2Supplier2ApprovalTypeDefDO</a></span></code>&nbsp;</td>
        <td class="colLast"><code>Order approval rules and further properties that are used by a shop. Optionally a supplier and payment provider (PSP) can be assigned.&nbsp;</td>
        
 </tr>
-<tr id="19611" class="altColor">
+<tr id="19611" class="rowColor">
        <td class="colLast colAlignRight"><code>oms&nbsp;</td>
        <td class="colFirst"><code><span class="memberNameLink"><a href="oms/Shop2Supplier2ReduceReasonDO.html" target="classFrame">Shop2Supplier2ReduceReasonDO</a></span></code>&nbsp;</td>
        <td class="colLast"><code>Reduction agreement of a shop-supplier relation which contains a relation of reduce reasons of both, shop and supplier.&nbsp;</td>
        
 </tr>
-<tr id="19619" class="rowColor">
+<tr id="19619" class="altColor">
        <td class="colLast colAlignRight"><code>oms&nbsp;</td>
        <td class="colFirst"><code><span class="memberNameLink"><a href="oms/Shop2SupplierDO.html" target="classFrame">Shop2SupplierDO</a></span></code>&nbsp;</td>
-       <td class="colLast"><code>Relationships between one shop and one or more suppliers.&nbsp;</td>
+       <td class="colLast"><code>Define which suppliers are used by the shops and define related properties&nbsp;</td>
        
 </tr>
-<tr id="19633" class="altColor">
+<tr id="19633" class="rowColor">
        <td class="colLast colAlignRight"><code>oms&nbsp;</td>
        <td class="colFirst"><code><span class="memberNameLink"><a href="oms/Shop2TaxTypeDefDO.html" target="classFrame">Shop2TaxTypeDefDO</a></span></code>&nbsp;</td>
        <td class="colLast"><code>Tax types as used by the shop in the order service. <br/>A mapping between the shop and tax type is only required for shop tax names that differ from TaxTypeDefDO.taxType&nbsp;</td>
        
 </tr>
-<tr id="19705" class="rowColor">
+<tr id="19705" class="altColor">
        <td class="colLast colAlignRight"><code>oms&nbsp;</td>
        <td class="colFirst"><code><span class="memberNameLink"><a href="oms/ShopDO.html" target="classFrame">ShopDO</a></span></code>&nbsp;</td>
        <td class="colLast"><code>List of all shops and their basic configuration.&nbsp;</td>
        
 </tr>
-<tr id="19718" class="altColor">
+<tr id="19718" class="rowColor">
        <td class="colLast colAlignRight"><code>oms&nbsp;</td>
        <td class="colFirst"><code><span class="memberNameLink"><a href="oms/ShopOrderValidationDO.html" target="classFrame">ShopOrderValidationDO</a></span></code>&nbsp;</td>
        <td class="colLast"><code>List of all rule sets for order validation which checks the availability of information to corresponding properties of an order message.<br>It can be configured whether a field should have a value or not.&nbsp;</td>
        
 </tr>
-<tr id="19773" class="rowColor">
+<tr id="19773" class="altColor">
        <td class="colLast colAlignRight"><code>oms&nbsp;</td>
        <td class="colFirst"><code><span class="memberNameLink"><a href="oms/Supplier2CarrierDO.html" target="classFrame">Supplier2CarrierDO</a></span></code>&nbsp;</td>
        <td class="colLast"><code>Lists all carriers that are assigned to a supplier.&nbsp;</td>
        
 </tr>
-<tr id="19778" class="altColor">
+<tr id="19778" class="rowColor">
        <td class="colLast colAlignRight"><code>oms&nbsp;</td>
        <td class="colFirst"><code><span class="memberNameLink"><a href="oms/Supplier2CountryDefDO.html" target="classFrame">Supplier2CountryDefDO</a></span></code>&nbsp;</td>
        <td class="colLast"><code>Country and currency naming as used by the supplier instead of defaults.&nbsp;</td>
        
 </tr>
-<tr id="19783" class="rowColor">
+<tr id="19783" class="altColor">
        <td class="colLast colAlignRight"><code>oms&nbsp;</td>
        <td class="colFirst"><code><span class="memberNameLink"><a href="oms/Supplier2DeliveryFormDefDO.html" target="classFrame">Supplier2DeliveryFormDefDO</a></span></code>&nbsp;</td>
        <td class="colLast"><code>Delivery form naming as used by a supplier instead of defaults.&nbsp;</td>
        
 </tr>
-<tr id="19788" class="altColor">
+<tr id="19788" class="rowColor">
        <td class="colLast colAlignRight"><code>oms&nbsp;</td>
        <td class="colFirst"><code><span class="memberNameLink"><a href="oms/Supplier2DeliveryOptionDefDO.html" target="classFrame">Supplier2DeliveryOptionDefDO</a></span></code>&nbsp;</td>
        <td class="colLast"><code>Delivery option naming as used by a supplier instead of defaults.&nbsp;</td>
        
 </tr>
-<tr id="19793" class="rowColor">
-       <td class="colLast colAlignRight"><code>oms&nbsp;</td>
-       <td class="colFirst"><code><span class="memberNameLink"><a href="oms/Supplier2DeliveryTypeDefDO.html" target="classFrame">Supplier2DeliveryTypeDefDO</a></span></code>&nbsp;</td>
-       <td class="colLast"><code><span class="deprecated">Deprecated</span> Delivery types naming as used by a supplier instead of defaults.&nbsp;</td>
-       
-</tr>
 <tr id="19798" class="altColor">
        <td class="colLast colAlignRight"><code>oms&nbsp;</td>
        <td class="colFirst"><code><span class="memberNameLink"><a href="oms/Supplier2PaymentDefDO.html" target="classFrame">Supplier2PaymentDefDO</a></span></code>&nbsp;</td>
-       <td class="colLast"><code>Payment method that should be used by a supplier.&nbsp;</td>
+       <td class="colLast"><code>Payment method name aliases, as used by the supplier. Without such an alias, the Payment will be searched for in PaymentDefDO &nbsp;</td>
        
 </tr>
 <tr id="19803" class="rowColor">

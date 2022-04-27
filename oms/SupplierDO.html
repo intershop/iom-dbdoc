@@ -14,7 +14,7 @@
 <body>
 
 <div class="topNav">
-<h1 class="bar">&nbsp;INTERSHOP IOM 4.1.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision 1753deeae7f82d144e37160592ed69ae51b7b074)</h1>
+<h1 class="bar">&nbsp;INTERSHOP IOM 4.1.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision b5ae1eda615001f0cff1dbb1c49a1b79ae729a24)</h1>
 </div>
 
 <h1>Table oms.SupplierDO</h1>
@@ -64,7 +64,7 @@
 <td class="colOne"><code>integer</code></td>
 <td class="colOne"><code>NOT_NULL</code></td>
 <td class="colOne"><code></code></td>
-<td class="colLast"><code>The country code where the shop is located at. The standard code can be used for external interfaces.</code>&nbsp;</td>
+<td class="colLast"><code>Could be used to determine which kind of country code the suppier is using in its APIs.</code>&nbsp;</td>
 </tr>
 
 <tr id="5" class="rowColor">
@@ -408,7 +408,7 @@ UNIQUE: does don't cover unique constraints and indexes defined on more than one
 <td class="colLast"><code>Supplier2DeliveryOptionDefDO_fk_supplierRef</code>&nbsp;</td>
 </tr>
 
-<tr class="altColor"><td class="colFirst colAlignRight"><code>oms</code></td><td class="colFirst"><code><span class="memberNameLink"><a href="../oms/Supplier2DeliveryTypeDefDO.html">Supplier2DeliveryTypeDefDO</a></span>.(supplierRef)</code>&nbsp;</td>
+<tr class="altColor"><td class="colFirst colAlignRight"><code>oms</code></td><td class="colFirst"><code>Supplier2DeliveryTypeDefDO.(supplierRef)</code>&nbsp;</td>
 <td class="colFirst"><code>SupplierDO.(id)</code>&nbsp;</td> 
 <td class="colLast"><code>Supplier2DeliveryTypeDefDO_fk_supplierRef</code>&nbsp;</td>
 </tr>

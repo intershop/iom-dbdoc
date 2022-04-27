@@ -14,11 +14,11 @@
 <body>
 
 <div class="topNav">
-<h1 class="bar">&nbsp;INTERSHOP IOM 4.1.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision 1753deeae7f82d144e37160592ed69ae51b7b074)</h1>
+<h1 class="bar">&nbsp;INTERSHOP IOM 4.1.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision b5ae1eda615001f0cff1dbb1c49a1b79ae729a24)</h1>
 </div>
 
 <h1>Table oms.ChargeTypeDefDO (Enum)</h1>
-<h5>Types of charges that are supported from the platform by default, e.g. "Delivery Charge".</h5>
+<h5>List the different charge types available by default.</h5>
 <table class="memberSummary" cellspacing="0" cellpadding="3" border="0">
 <h2>Columns</span><span class="tabEnd">&nbsp;</h2>
 <tbody>
@@ -56,6 +56,15 @@
 <td class="colOne"><code></code></td>
 <td class="colOne"><code></code></td>
 <td class="colLast"><code></code>&nbsp;</td>
+</tr>
+
+<tr id="4" class="altColor">
+<td class="colFirst"></td>
+<td class="colOne"><code>chargeType</code></td>
+<td class="colOne"><code>text</code></td>
+<td class="colOne"><code></code></td>
+<td class="colOne"><code></code></td>
+<td class="colLast"><code>The string used as default charge identifier within the order API. Can be overwritten in Shop2ChargeTypeDefDO</code>&nbsp;</td>
 </tr></tbody></table>
 <p />
 [1] Not all references are enforced by a foreign key where they could.<br />
@@ -118,11 +127,12 @@ Such &quot;missing&quot; foreign keys are denoted with &quot;NOT DEFINED&quot;.
 <th class="colFirst" scope="col">id</th>
 <th class="colFirst" scope="col">name</th>
 <th class="colFirst" scope="col">description</th>
-<tr class="rowColor"><td>1</td><td>Cod Charge</td><td>A charge/fee in case of cash on delivery (COD).</td></tr>
-<tr class="altColor"><td>2</td><td>Delivery Charge</td><td>A charge/fee for transporting or delivery.</td></tr>
-<tr class="rowColor"><td>3</td><td>Handling Charge</td><td>A charge/fee to cover handling costs. E.g. packing, transport, etc. in logistics.</td></tr>
-<tr class="altColor"><td>4</td><td>Payment Charge</td><td>A charge/fee on payment, also payment process charge. E.g. for transactions.</td></tr>
-<tr class="rowColor"><td>5</td><td>Surcharge</td><td>An extra charge/fee that is added to the regular costs. E.g. for shipping to remote areas.</td></tr>
+<th class="colFirst" scope="col">chargeType</th>
+<tr class="rowColor"><td>1</td><td>Cod Charge</td><td>A charge/fee in case of cash on delivery (COD).</td><td></td></tr>
+<tr class="altColor"><td>2</td><td>Delivery Charge</td><td>A charge/fee for transporting or delivery.</td><td></td></tr>
+<tr class="rowColor"><td>3</td><td>Handling Charge</td><td>A charge/fee to cover handling costs. E.g. packing, transport, etc. in logistics.</td><td></td></tr>
+<tr class="altColor"><td>4</td><td>Payment Charge</td><td>A charge/fee on payment, also payment process charge. E.g. for transactions.</td><td></td></tr>
+<tr class="rowColor"><td>5</td><td>Surcharge</td><td>An extra charge/fee that is added to the regular costs. E.g. for shipping to remote areas.</td><td></td></tr>
 </tr>
 </tbody>
 
