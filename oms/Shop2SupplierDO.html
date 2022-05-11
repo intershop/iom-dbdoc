@@ -14,7 +14,7 @@
 <body>
 
 <div class="topNav">
-<h1 class="bar">&nbsp;INTERSHOP IOM 4.1.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision ee867c0de3e179956236d8e36f1a33291d25780b)</h1>
+<h1 class="bar">&nbsp;INTERSHOP IOM 4.1.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision 98158a51f2889e466a8e2d8c038845303d68dd50)</h1>
 </div>
 
 <h1>Table oms.Shop2SupplierDO</h1>
@@ -251,7 +251,11 @@
 <td class="colOne"><code>bigint</code></td>
 <td class="colOne"><code></code></td>
 <td class="colOne"><code></code></td>
-<td class="colLast"><code>Defines at which process step the blocked stock should be increased</code>&nbsp;</td>
+<td class="colLast"><code>Defines at which process step the blocked stock get released (the stock get blocked at the supplier assignment step).
+Can be set to either 25 (directly after the order is entirely submitted) or 50 (on dispatch).
+"on dispatch" is the default behavior when this attribute is null.
+This parameter additionally define if and when the stocklevel should be reduced (in ArticleSupplierShopDO):
+This reduction only take place when the parameter is not null, again at commision or dispatch time.</code>&nbsp;</td>
 </tr></tbody></table>
 <p />
 [1] Not all references are enforced by a foreign key where they could.<br />
