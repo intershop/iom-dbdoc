@@ -14,7 +14,7 @@
 <body>
 
 <div class="topNav">
-<h1 class="bar">&nbsp;INTERSHOP IOM 4.1.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision ee2b8fc96b8a3ad53b4f38b876ee0cd26baf2e75)</h1>
+<h1 class="bar">&nbsp;INTERSHOP IOM 4.1.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision 732c4c77275d3affb57cfc8347284f812e96441f)</h1>
 </div>
 
 <h1>Table oms.CommunicationPartnerDO</h1>
@@ -109,8 +109,7 @@
 <td class="colOne"><code>integer</code></td>
 <td class="colOne"><code></code></td>
 <td class="colOne"><code></code></td>
-<td class="colLast"><code>If set only transmission (objects) with matching merge type will be send.<br>
-			If NULL, transmission will always be send.</code>&nbsp;</td>
+<td class="colLast"><code><span class="deprecated">Deprecated</span></code>&nbsp;</td>
 </tr>
 
 <tr id="10" class="altColor">
@@ -119,7 +118,7 @@
 <td class="colOne"><code>boolean</code></td>
 <td class="colOne"><code>NOT_NULL</code></td>
 <td class="colOne"><code>true</code></td>
-<td class="colLast"><code>Whether transmissions has to be split to have only one supplier.</code>&nbsp;</td>
+<td class="colLast"><code>Forces transmissions to be split per suppliers. This flag is only relevant when neither the sender nor the reiceiver is a supplier.</code>&nbsp;</td>
 </tr></tbody></table>
 <p />
 [1] Not all references are enforced by a foreign key where they could.<br />
