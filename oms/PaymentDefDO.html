@@ -5,7 +5,7 @@
 <title>Table oms.PaymentDefDO</title>
 <meta charset="UTF-8"/>
 <meta name="date" content="2022-05-24"/>
-<meta name="oid" content="18622"/>
+<meta name="oid" content="18613"/>
 <link rel="stylesheet" type="text/css" href="../stylesheet.css"/>
 <link rel="stylesheet" type="text/css" href="../dbdoc.css"/>
 <script type="text/javascript" src="../script.js"></script>
@@ -14,7 +14,7 @@
 <body>
 
 <div class="topNav">
-<h1 class="bar">&nbsp;INTERSHOP IOM 4.1.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision ee2ddb29eaaf0c564119c7ec82e871e8943959f0)</h1>
+<h1 class="bar">&nbsp;INTERSHOP IOM 4.1.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision 51fd3865c1e204fd4a055578fa4d5d91b1f329d7)</h1>
 </div>
 
 <h1>Table oms.PaymentDefDO (Enum)</h1>
@@ -208,34 +208,34 @@ Such &quot;missing&quot; foreign keys are denoted with &quot;NOT DEFINED&quot;.
 <th class="colFirst" scope="col">paymentGroupRef</th>
 <th class="colFirst" scope="col">payment</th>
 <th class="colFirst" scope="col">paymentName</th>
-<tr class="rowColor"><td>1</td><td>Unknown payment method</td><td>no payment</td><td></td><td>tb.payment.no.payment</td><td></td></tr>
-<tr class="altColor"><td>2</td><td>Prepayment</td><td>pre payment</td><td></td><td>tb.payment.prepayment</td><td></td></tr>
-<tr class="rowColor"><td>3</td><td>Credit card</td><td>credit card</td><td></td><td>tb.payment.creditcard</td><td></td></tr>
-<tr class="altColor"><td>4</td><td>Cash on delivery cod</td><td>cash on delivery</td><td></td><td>tb.payment.cash.on.delivery</td><td></td></tr>
-<tr class="rowColor"><td>5</td><td>On account</td><td>on account</td><td></td><td>tb.payment.on.account</td><td></td></tr>
-<tr class="altColor"><td>6</td><td>Hire purchase</td><td>hire purchase</td><td></td><td>tb.payment.hire.purchase</td><td></td></tr>
-<tr class="rowColor"><td>7</td><td>Electronic direct debit</td><td>electronic direct debit</td><td></td><td>tb.payment.direct.debit</td><td></td></tr>
-<tr class="altColor"><td>8</td><td>Leasing</td><td>leasing</td><td></td><td>tb.payment.leasing</td><td></td></tr>
-<tr class="rowColor"><td>9</td><td>Direct transfer</td><td>direct transfer</td><td></td><td>tb.payment.direct.transfer</td><td></td></tr>
-<tr class="altColor"><td>10</td><td>PayPal</td><td>paypal</td><td></td><td>tb.payment.paypal</td><td></td></tr>
-<tr class="rowColor"><td>11</td><td>Klarna</td><td>klarna</td><td></td><td>tb.payment.klarna</td><td></td></tr>
-<tr class="altColor"><td>12</td><td>Coupon</td><td>coupon</td><td></td><td>tb.payment.coupon</td><td></td></tr>
-<tr class="rowColor"><td>13</td><td>Personal check</td><td>personal check</td><td></td><td>tb.payment.personalcheck</td><td></td></tr>
-<tr class="altColor"><td>14</td><td>Credit card via phone or fax</td><td>credit card via phone fax</td><td></td><td>tb.payment.creditcard.via.phone.fax</td><td></td></tr>
-<tr class="rowColor"><td>15</td><td>Visa</td><td>visa</td><td></td><td>tb.payment.visa</td><td></td></tr>
-<tr class="altColor"><td>16</td><td>American Express</td><td>american express</td><td></td><td>tb.payment.american.express</td><td></td></tr>
-<tr class="rowColor"><td>17</td><td>EuroCard</td><td>eurocard</td><td></td><td>tb.payment.euro.card</td><td></td></tr>
-<tr class="altColor"><td>18</td><td>MasterCard</td><td>mastercard</td><td></td><td>tb.payment.master.card</td><td></td></tr>
-<tr class="rowColor"><td>19</td><td>Ebay payment</td><td>eBay payment</td><td></td><td>tb.payment.ebay</td><td></td></tr>
-<tr class="altColor"><td>20</td><td>Payment in store</td><td>store payment</td><td></td><td>tb.payment.store</td><td></td></tr>
-<tr class="rowColor"><td>21</td><td>Giropay</td><td>giropay</td><td></td><td>tb.payment.giropay</td><td></td></tr>
-<tr class="altColor"><td>22</td><td>Billpay</td><td>billpay</td><td></td><td>tb.payment.billpay</td><td></td></tr>
-<tr class="rowColor"><td>23</td><td>Cash on pickup</td><td>cash on pickup</td><td></td><td>tb.payment.cash.on.pickup</td><td></td></tr>
-<tr class="altColor"><td>24</td><td>ISH dummy payment method</td><td>ISH Fast Pay</td><td></td><td>tb.payment.ish.fast.pay</td><td></td></tr>
-<tr class="rowColor"><td>30</td><td>iDEAL</td><td>ideal</td><td></td><td>tb.payment.ideal</td><td></td></tr>
-<tr class="altColor"><td>31</td><td>Maestro card</td><td>maestro card</td><td></td><td>tb.payment.maestro.card</td><td></td></tr>
-<tr class="rowColor"><td>40</td><td>Manual refund</td><td>manual refund</td><td></td><td>tb.payment.manual.refund</td><td></td></tr>
-<tr class="altColor"><td>100</td><td>No payment required because order amount is zero.</td><td>no payment required</td><td></td><td>tb.payment.no.payment.required</td><td></td></tr>
+<tr class="rowColor"><td>1</td><td>Unknown payment method</td><td>no payment</td><td></td><td>tb.payment.no.payment</td><td>NO_PAYMENT</td></tr>
+<tr class="altColor"><td>2</td><td>Prepayment</td><td>pre payment</td><td></td><td>tb.payment.prepayment</td><td>PREPAYMENT</td></tr>
+<tr class="rowColor"><td>3</td><td>Credit card</td><td>credit card</td><td></td><td>tb.payment.creditcard</td><td>CREDITCARD</td></tr>
+<tr class="altColor"><td>4</td><td>Cash on delivery cod</td><td>cash on delivery</td><td></td><td>tb.payment.cash.on.delivery</td><td>CASH_ON_DELIVERY</td></tr>
+<tr class="rowColor"><td>5</td><td>On account</td><td>on account</td><td></td><td>tb.payment.on.account</td><td>ON_ACCOUNT</td></tr>
+<tr class="altColor"><td>6</td><td>Hire purchase</td><td>hire purchase</td><td></td><td>tb.payment.hire.purchase</td><td>HIRE_PURCHASE</td></tr>
+<tr class="rowColor"><td>7</td><td>Electronic direct debit</td><td>electronic direct debit</td><td></td><td>tb.payment.direct.debit</td><td>DIRECT_DEBIT</td></tr>
+<tr class="altColor"><td>8</td><td>Leasing</td><td>leasing</td><td></td><td>tb.payment.leasing</td><td>LEASING</td></tr>
+<tr class="rowColor"><td>9</td><td>Direct transfer</td><td>direct transfer</td><td></td><td>tb.payment.direct.transfer</td><td>DIRECT_TRANSFER</td></tr>
+<tr class="altColor"><td>10</td><td>PayPal</td><td>paypal</td><td></td><td>tb.payment.paypal</td><td>PAYPAL</td></tr>
+<tr class="rowColor"><td>11</td><td>Klarna</td><td>klarna</td><td>6</td><td>tb.payment.klarna</td><td>KLARNA</td></tr>
+<tr class="altColor"><td>12</td><td>Coupon</td><td>coupon</td><td></td><td>tb.payment.coupon</td><td>COUPON</td></tr>
+<tr class="rowColor"><td>13</td><td>Personal check</td><td>personal check</td><td></td><td>tb.payment.personalcheck</td><td>PERSONALCHECK</td></tr>
+<tr class="altColor"><td>14</td><td>Credit card via phone or fax</td><td>credit card via phone fax</td><td>3</td><td>tb.payment.creditcard.via.phone.fax</td><td>CREDITCARD_VIA_PHONE_FAX</td></tr>
+<tr class="rowColor"><td>15</td><td>Visa</td><td>visa</td><td>3</td><td>tb.payment.visa</td><td>VISA</td></tr>
+<tr class="altColor"><td>16</td><td>American Express</td><td>american express</td><td>3</td><td>tb.payment.american.express</td><td>AMERICAN_EXPRESS</td></tr>
+<tr class="rowColor"><td>17</td><td>EuroCard</td><td>eurocard</td><td>3</td><td>tb.payment.euro.card</td><td>EURO_CARD</td></tr>
+<tr class="altColor"><td>18</td><td>MasterCard</td><td>mastercard</td><td>3</td><td>tb.payment.master.card</td><td>MASTER_CARD</td></tr>
+<tr class="rowColor"><td>19</td><td>Ebay payment</td><td>eBay payment</td><td></td><td>tb.payment.ebay</td><td>EBAY</td></tr>
+<tr class="altColor"><td>20</td><td>Payment in store</td><td>store payment</td><td></td><td>tb.payment.store</td><td>STORE</td></tr>
+<tr class="rowColor"><td>21</td><td>Giropay</td><td>giropay</td><td></td><td>tb.payment.giropay</td><td>GIROPAY</td></tr>
+<tr class="altColor"><td>22</td><td>Billpay</td><td>billpay</td><td></td><td>tb.payment.billpay</td><td>BILLPAY</td></tr>
+<tr class="rowColor"><td>23</td><td>Cash on pickup</td><td>cash on pickup</td><td></td><td>tb.payment.cash.on.pickup</td><td>CASH_ON_PICKUP</td></tr>
+<tr class="altColor"><td>24</td><td>ISH dummy payment method</td><td>ISH Fast Pay</td><td></td><td>tb.payment.ish.fast.pay</td><td>ISH_FAST_PAY</td></tr>
+<tr class="rowColor"><td>30</td><td>iDEAL</td><td>ideal</td><td></td><td>tb.payment.ideal</td><td>IDEAL</td></tr>
+<tr class="altColor"><td>31</td><td>Maestro card</td><td>maestro card</td><td></td><td>tb.payment.maestro.card</td><td>MAESTRO_CARD</td></tr>
+<tr class="rowColor"><td>40</td><td>Manual refund</td><td>manual refund</td><td></td><td>tb.payment.manual.refund</td><td>MANUAL_REFUND</td></tr>
+<tr class="altColor"><td>100</td><td>No payment required because order amount is zero.</td><td>no payment required</td><td></td><td>tb.payment.no.payment.required</td><td>NO_PAYMENT_REQUIRED</td></tr>
 </tr>
 </tbody>
 
