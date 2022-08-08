@@ -14,7 +14,7 @@
 <body>
 
 <div class="topNav">
-<h1 class="bar">&nbsp;INTERSHOP IOM 4.2.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision 2bd82b01373462d2e16e3d1f39d6e6972426a586)</h1>
+<h1 class="bar">&nbsp;INTERSHOP IOM 4.2.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision bc1830065633e3976f68c6a72d43b50fd5c056fe)</h1>
 </div>
 
 <h1>Table oms.TransmissionTypeDefDO (Enum)</h1>
@@ -272,54 +272,55 @@ Such &quot;missing&quot; foreign keys are denoted with &quot;NOT DEFINED&quot;.
 <tr class="rowColor"><td>360</td><td>requestIdentCode</td><td>3</td><td></td><td>REQUEST_IDENT_CODE</td></tr>
 <tr class="altColor"><td>370</td><td>downloadDocument</td><td>3</td><td></td><td>DOWNLOAD_DOCUMENT</td></tr>
 <tr class="rowColor"><td>500</td><td>sendCustomerMailOrder</td><td>6</td><td>Send an email to confirm an order.</td><td>SEND_CUSTOMER_MAIL_ORDER</td></tr>
-<tr class="altColor"><td>502</td><td>sendCustomerMailReadyForPickUp</td><td>6</td><td>Send an email that a delivery is ready to pickup.</td><td>SEND_CUSTOMER_MAIL_READY_FOR_PICK_UP</td></tr>
-<tr class="rowColor"><td>503</td><td>sendCustomerMailOrderCommissioned</td><td>6</td><td>Send an email  that an order was successfully commissioned.</td><td>SEND_CUSTOMER_MAIL_ORDER_COMMISSIONED</td></tr>
-<tr class="altColor"><td>520</td><td>sendCustomerMailResponseTemporary</td><td>6</td><td>Send an email that an order will be routed to the assigned  fulfillment locations.</td><td>SEND_CUSTOMER_MAIL_RESPONSE_TEMPORARY</td></tr>
-<tr class="rowColor"><td>521</td><td>sendCustomerMailResponseInitial</td><td>6</td><td>Send an email that a response was created.</td><td>SEND_CUSTOMER_MAIL_RESPONSE_INITIAL</td></tr>
-<tr class="altColor"><td>522</td><td>sendCustomerMailResponseContinuous</td><td>6</td><td>Send an email that a response from the supplier was received.</td><td>SEND_CUSTOMER_MAIL_RESPONSE_CONTINUOUS</td></tr>
-<tr class="rowColor"><td>530</td><td>sendCustomerMailDispatch</td><td>6</td><td>Send an email that a dispatch was made.</td><td>SEND_CUSTOMER_MAIL_DISPATCH</td></tr>
-<tr class="altColor"><td>531</td><td>sendCustomerMailDispatchImmaterial</td><td>6</td><td>Send an email with links to download digital goods.</td><td>SEND_CUSTOMER_MAIL_DISPATCH_IMMATERIAL</td></tr>
-<tr class="rowColor"><td>540</td><td>sendCustomerMailReturnCAN</td><td>6</td><td>Send an email to note or confirm a return because of a cancellation.</td><td>SEND_CUSTOMER_MAIL_RETURN_CAN</td></tr>
-<tr class="altColor"><td>541</td><td>sendCustomerMailReturnRCL</td><td>6</td><td>Send an email that the order was canceled.</td><td>SEND_CUSTOMER_MAIL_RETURN_RCL</td></tr>
-<tr class="rowColor"><td>542</td><td>sendCustomerMailReturnINV</td><td>6</td><td>Send an email to note an inversion, e.g. the package could not be delivered because of a  wrong shipping address.</td><td>SEND_CUSTOMER_MAIL_RETURN_INV</td></tr>
-<tr class="altColor"><td>543</td><td>sendCustomerMailReturnRET</td><td>6</td><td>Send an email for a general return.</td><td>SEND_CUSTOMER_MAIL_RETURN_RET</td></tr>
-<tr class="rowColor"><td>544</td><td>sendCustomerMailReturnDEF</td><td>6</td><td>Send an email to confirm a return because of defects of a product.</td><td>SEND_CUSTOMER_MAIL_RETURN_DEF</td></tr>
-<tr class="altColor"><td>550</td><td>sendCustomerMailPaymentReminder</td><td>6</td><td>Send an email  that a payment has not yet been made.</td><td>SEND_CUSTOMER_MAIL_PAYMENT_REMINDER</td></tr>
-<tr class="rowColor"><td>560</td><td>sendCustomerMailDeliveryDelay</td><td>6</td><td>Send an email to note that the expected delivery date will be delayed.</td><td>SEND_CUSTOMER_MAIL_DELIVERY_DELAY</td></tr>
-<tr class="altColor"><td>570</td><td>sendCustomerMailInvoice</td><td>6</td><td>Send an email with an attached invoice document.</td><td>SEND_CUSTOMER_MAIL_INVOICE</td></tr>
-<tr class="rowColor"><td>571</td><td>sendCustomerMailCreditNote</td><td>6</td><td>Send an email with an attached credit note document.</td><td>SEND_CUSTOMER_MAIL_CREDITNOTE</td></tr>
-<tr class="altColor"><td>600</td><td>sendCustomerMailReturnRCL010</td><td>6</td><td>Send an email that the order was canceled. The customer has requested the cancellation.</td><td>SEND_CUSTOMER_MAIL_RETURN_RCL010</td></tr>
-<tr class="rowColor"><td>602</td><td>sendCustomerMailReturnRCL020</td><td>6</td><td>Send an email that the order was canceled. The product is end-of-life and not available any longer.</td><td>SEND_CUSTOMER_MAIL_RETURN_RCL020</td></tr>
-<tr class="altColor"><td>603</td><td>sendCustomerMailReturnRCL021</td><td>6</td><td>Send an email that the order was canceled. The product is currently not available.</td><td>SEND_CUSTOMER_MAIL_RETURN_RCL021</td></tr>
-<tr class="rowColor"><td>614</td><td>sendCustomerMailReturnRCL045</td><td>6</td><td>Send an email that the order was canceled. The payment was not received yet.</td><td>SEND_CUSTOMER_MAIL_RETURN_RCL045</td></tr>
-<tr class="altColor"><td>615</td><td>sendCustomerMailReturnRCL980</td><td>6</td><td>Send an email that the order was canceled. There is a suspicion of fraud.</td><td>SEND_CUSTOMER_MAIL_RETURN_RCL980</td></tr>
-<tr class="rowColor"><td>616</td><td>sendCustomerMailReturnRejected</td><td>6</td><td>Send an email  that a return was rejected.</td><td>SEND_CUSTOMER_MAIL_RETURN_REJECTED</td></tr>
-<tr class="altColor"><td>700</td><td>sendCustomerMailDispatchInvoice</td><td>6</td><td>Send an email that a dispatch was made. An invoice document is attached to the email.</td><td>SEND_CUSTOMER_MAIL_DISPATCH_INVOICE</td></tr>
-<tr class="rowColor"><td>701</td><td>sendCustomerMailReturnCreditnote</td><td>6</td><td>Send an email to note or confirm a return or cancellation. A credit note  document is attached to the email.</td><td>SEND_CUSTOMER_MAIL_RETURN_CREDITNOTE</td></tr>
-<tr class="altColor"><td>702</td><td>sendCustomerMailReturnCreditnote_CAN</td><td>6</td><td>Send an email to note or confirm a return because of a cancellation. A credit note  document is attached to the email.</td><td>SEND_CUSTOMER_MAIL_RETURN_CREDITNOTE</td></tr>
-<tr class="rowColor"><td>703</td><td>sendCustomerMailReturnCreditnote_RCL</td><td>6</td><td>Send an email that the order was canceled. A credit note  document is attached to the email.</td><td>SEND_CUSTOMER_MAIL_RETURN_CREDITNOTE</td></tr>
-<tr class="altColor"><td>704</td><td>sendCustomerMailReturnCreditnote_INV</td><td>6</td><td>Send an email to note an inversion, e.g. the package could not be delivered because of a  wrong shipping address. A credit note  document is attached to the email.</td><td>SEND_CUSTOMER_MAIL_RETURN_CREDITNOTE</td></tr>
-<tr class="rowColor"><td>705</td><td>sendCustomerMailReturnCreditnote_RET</td><td>6</td><td>Send an email for a general return. A credit note  document is attached to the email.</td><td>SEND_CUSTOMER_MAIL_RETURN_CREDITNOTE</td></tr>
-<tr class="altColor"><td>706</td><td>sendCustomerMailReturnCreditnote_DEF</td><td>6</td><td>Send an email to confirm a return because of defects of a product. A credit note  document is attached to the email.</td><td>SEND_CUSTOMER_MAIL_RETURN_CREDITNOTE</td></tr>
-<tr class="rowColor"><td>707</td><td>sendCustomerMailReturnCreditnote_RCL010</td><td>6</td><td>Send an email that the order was canceled. The customer has requested the return or cancellation. A credit note  document is attached to the email.</td><td>SEND_CUSTOMER_MAIL_RETURN_CREDITNOTE</td></tr>
-<tr class="altColor"><td>708</td><td>sendCustomerMailReturnCreditnote_RCL020</td><td>6</td><td>Send an email that the order was canceled. The product is end-of-life and not available any longer. A credit note  document is attached to the email.</td><td>SEND_CUSTOMER_MAIL_RETURN_CREDITNOTE</td></tr>
-<tr class="rowColor"><td>709</td><td>sendCustomerMailReturnCreditnote_RCL045</td><td>6</td><td>Send an email that the order was canceled. The payment was not received yet. A credit note  document is attached to the email.</td><td>SEND_CUSTOMER_MAIL_RETURN_CREDITNOTE</td></tr>
-<tr class="altColor"><td>710</td><td>sendCustomerMailReturnCreditnoteRefunded</td><td>6</td><td>Send an email that a refund was made.</td><td>SEND_CUSTOMER_MAIL_RETURN_REFUNDED</td></tr>
-<tr class="rowColor"><td>711</td><td>sendCustomerMailReturnCreditnote_RCL980</td><td>6</td><td>Send an email that the order was canceled. There is a suspicion of fraud. A credit note  document is attached to the email.</td><td>SEND_CUSTOMER_MAIL_RETURN_CREDITNOTE</td></tr>
-<tr class="altColor"><td>712</td><td>sendCustomerMailReturnCreditnote_RCL021</td><td>6</td><td>Send an email that the order was canceled. The product is currently not available. A credit note  document is attached to the email.</td><td>SEND_CUSTOMER_MAIL_RETURN_CREDITNOTE</td></tr>
-<tr class="rowColor"><td>713</td><td>sendCustomerMailReturnLabel</td><td>6</td><td>Send an email with an attached return label.</td><td>SEND_CUSTOMER_MAIL_RETURN_LABEL</td></tr>
-<tr class="altColor"><td>714</td><td>sendCustomerMailReturnAnnouncement</td><td>6</td><td>Send an email that a return request was created.</td><td>SEND_CUSTOMER_MAIL_RETURN_ANNOUNCEMENT</td></tr>
-<tr class="rowColor"><td>715</td><td>sendCustomerMailReturnAnnouncementTransmission</td><td>6</td><td>Send an email that a transmission for a return request was created.</td><td>SEND_CUSTOMER_MAIL_RETURN_ANNOUNCEMENT_TRANSMISS</td></tr>
-<tr class="altColor"><td>1010</td><td>extSendOrder</td><td>2</td><td></td><td>EXT_SEND_ORDER</td></tr>
-<tr class="rowColor"><td>1020</td><td>extReceiveOrder</td><td>1</td><td></td><td>EXT_RECEIVE_ORDER</td></tr>
-<tr class="altColor"><td>1030</td><td>extSendArticle</td><td>1</td><td></td><td>EXT_SEND_ARTICLE</td></tr>
-<tr class="rowColor"><td>1040</td><td>extReceiveArticle</td><td>2</td><td></td><td>EXT_RECEIVE_ARTICLE</td></tr>
-<tr class="altColor"><td>1041</td><td>extReceiveStock</td><td>2</td><td></td><td>EXT_RECEIVE_STOCK</td></tr>
-<tr class="rowColor"><td>1060</td><td>extReceiveReturn</td><td>2</td><td></td><td>EXT_RECEIVE_RETURN</td></tr>
-<tr class="altColor"><td>1080</td><td>extReceiveDispatch</td><td>2</td><td></td><td>EXT_RECEIVE_DISPATCH</td></tr>
-<tr class="rowColor"><td>1900</td><td>extTransferFile</td><td>2</td><td></td><td>EXT_SEND_FILE</td></tr>
-<tr class="altColor"><td>1910</td><td>extSendSupplierDocumentDeliveryNote</td><td>2</td><td></td><td>EXT_SEND_SUPPLIER_DOCUMENT_DELIVERY_NOTE</td></tr>
-<tr class="rowColor"><td>1920</td><td>extSendSalesAnalyticsFile</td><td>2</td><td></td><td>EXT_SEND_SALES_ANALYTICS_FILE</td></tr>
+<tr class="altColor"><td>501</td><td>sendCustomerMailOrderMerge</td><td>6</td><td><span class="deprecated">Deprecated</span> for removal since 4.1.0</td><td>SEND_CUSTOMER_MAIL_ORDER_MERGE</td></tr>
+<tr class="rowColor"><td>502</td><td>sendCustomerMailReadyForPickUp</td><td>6</td><td>Send an email that a delivery is ready to pickup.</td><td>SEND_CUSTOMER_MAIL_READY_FOR_PICK_UP</td></tr>
+<tr class="altColor"><td>503</td><td>sendCustomerMailOrderCommissioned</td><td>6</td><td>Send an email  that an order was successfully commissioned.</td><td>SEND_CUSTOMER_MAIL_ORDER_COMMISSIONED</td></tr>
+<tr class="rowColor"><td>520</td><td>sendCustomerMailResponseTemporary</td><td>6</td><td>Send an email that an order will be routed to the assigned  fulfillment locations.</td><td>SEND_CUSTOMER_MAIL_RESPONSE_TEMPORARY</td></tr>
+<tr class="altColor"><td>521</td><td>sendCustomerMailResponseInitial</td><td>6</td><td>Send an email that a response was created.</td><td>SEND_CUSTOMER_MAIL_RESPONSE_INITIAL</td></tr>
+<tr class="rowColor"><td>522</td><td>sendCustomerMailResponseContinuous</td><td>6</td><td>Send an email that a response from the supplier was received.</td><td>SEND_CUSTOMER_MAIL_RESPONSE_CONTINUOUS</td></tr>
+<tr class="altColor"><td>530</td><td>sendCustomerMailDispatch</td><td>6</td><td>Send an email that a dispatch was made.</td><td>SEND_CUSTOMER_MAIL_DISPATCH</td></tr>
+<tr class="rowColor"><td>531</td><td>sendCustomerMailDispatchImmaterial</td><td>6</td><td>Send an email with links to download digital goods.</td><td>SEND_CUSTOMER_MAIL_DISPATCH_IMMATERIAL</td></tr>
+<tr class="altColor"><td>540</td><td>sendCustomerMailReturnCAN</td><td>6</td><td>Send an email to note or confirm a return because of a cancellation.</td><td>SEND_CUSTOMER_MAIL_RETURN_CAN</td></tr>
+<tr class="rowColor"><td>541</td><td>sendCustomerMailReturnRCL</td><td>6</td><td>Send an email that the order was canceled.</td><td>SEND_CUSTOMER_MAIL_RETURN_RCL</td></tr>
+<tr class="altColor"><td>542</td><td>sendCustomerMailReturnINV</td><td>6</td><td>Send an email to note an inversion, e.g. the package could not be delivered because of a  wrong shipping address.</td><td>SEND_CUSTOMER_MAIL_RETURN_INV</td></tr>
+<tr class="rowColor"><td>543</td><td>sendCustomerMailReturnRET</td><td>6</td><td>Send an email for a general return.</td><td>SEND_CUSTOMER_MAIL_RETURN_RET</td></tr>
+<tr class="altColor"><td>544</td><td>sendCustomerMailReturnDEF</td><td>6</td><td>Send an email to confirm a return because of defects of a product.</td><td>SEND_CUSTOMER_MAIL_RETURN_DEF</td></tr>
+<tr class="rowColor"><td>550</td><td>sendCustomerMailPaymentReminder</td><td>6</td><td>Send an email  that a payment has not yet been made.</td><td>SEND_CUSTOMER_MAIL_PAYMENT_REMINDER</td></tr>
+<tr class="altColor"><td>560</td><td>sendCustomerMailDeliveryDelay</td><td>6</td><td>Send an email to note that the expected delivery date will be delayed.</td><td>SEND_CUSTOMER_MAIL_DELIVERY_DELAY</td></tr>
+<tr class="rowColor"><td>570</td><td>sendCustomerMailInvoice</td><td>6</td><td>Send an email with an attached invoice document.</td><td>SEND_CUSTOMER_MAIL_INVOICE</td></tr>
+<tr class="altColor"><td>571</td><td>sendCustomerMailCreditNote</td><td>6</td><td>Send an email with an attached credit note document.</td><td>SEND_CUSTOMER_MAIL_CREDITNOTE</td></tr>
+<tr class="rowColor"><td>600</td><td>sendCustomerMailReturnRCL010</td><td>6</td><td>Send an email that the order was canceled. The customer has requested the cancellation.</td><td>SEND_CUSTOMER_MAIL_RETURN_RCL010</td></tr>
+<tr class="altColor"><td>602</td><td>sendCustomerMailReturnRCL020</td><td>6</td><td>Send an email that the order was canceled. The product is end-of-life and not available any longer.</td><td>SEND_CUSTOMER_MAIL_RETURN_RCL020</td></tr>
+<tr class="rowColor"><td>603</td><td>sendCustomerMailReturnRCL021</td><td>6</td><td>Send an email that the order was canceled. The product is currently not available.</td><td>SEND_CUSTOMER_MAIL_RETURN_RCL021</td></tr>
+<tr class="altColor"><td>614</td><td>sendCustomerMailReturnRCL045</td><td>6</td><td>Send an email that the order was canceled. The payment was not received yet.</td><td>SEND_CUSTOMER_MAIL_RETURN_RCL045</td></tr>
+<tr class="rowColor"><td>615</td><td>sendCustomerMailReturnRCL980</td><td>6</td><td>Send an email that the order was canceled. There is a suspicion of fraud.</td><td>SEND_CUSTOMER_MAIL_RETURN_RCL980</td></tr>
+<tr class="altColor"><td>616</td><td>sendCustomerMailReturnRejected</td><td>6</td><td>Send an email  that a return was rejected.</td><td>SEND_CUSTOMER_MAIL_RETURN_REJECTED</td></tr>
+<tr class="rowColor"><td>700</td><td>sendCustomerMailDispatchInvoice</td><td>6</td><td>Send an email that a dispatch was made. An invoice document is attached to the email.</td><td>SEND_CUSTOMER_MAIL_DISPATCH_INVOICE</td></tr>
+<tr class="altColor"><td>701</td><td>sendCustomerMailReturnCreditnote</td><td>6</td><td>Send an email to note or confirm a return or cancellation. A credit note  document is attached to the email.</td><td>SEND_CUSTOMER_MAIL_RETURN_CREDITNOTE</td></tr>
+<tr class="rowColor"><td>702</td><td>sendCustomerMailReturnCreditnote_CAN</td><td>6</td><td>Send an email to note or confirm a return because of a cancellation. A credit note  document is attached to the email.</td><td>SEND_CUSTOMER_MAIL_RETURN_CREDITNOTE</td></tr>
+<tr class="altColor"><td>703</td><td>sendCustomerMailReturnCreditnote_RCL</td><td>6</td><td>Send an email that the order was canceled. A credit note  document is attached to the email.</td><td>SEND_CUSTOMER_MAIL_RETURN_CREDITNOTE</td></tr>
+<tr class="rowColor"><td>704</td><td>sendCustomerMailReturnCreditnote_INV</td><td>6</td><td>Send an email to note an inversion, e.g. the package could not be delivered because of a  wrong shipping address. A credit note  document is attached to the email.</td><td>SEND_CUSTOMER_MAIL_RETURN_CREDITNOTE</td></tr>
+<tr class="altColor"><td>705</td><td>sendCustomerMailReturnCreditnote_RET</td><td>6</td><td>Send an email for a general return. A credit note  document is attached to the email.</td><td>SEND_CUSTOMER_MAIL_RETURN_CREDITNOTE</td></tr>
+<tr class="rowColor"><td>706</td><td>sendCustomerMailReturnCreditnote_DEF</td><td>6</td><td>Send an email to confirm a return because of defects of a product. A credit note  document is attached to the email.</td><td>SEND_CUSTOMER_MAIL_RETURN_CREDITNOTE</td></tr>
+<tr class="altColor"><td>707</td><td>sendCustomerMailReturnCreditnote_RCL010</td><td>6</td><td>Send an email that the order was canceled. The customer has requested the return or cancellation. A credit note  document is attached to the email.</td><td>SEND_CUSTOMER_MAIL_RETURN_CREDITNOTE</td></tr>
+<tr class="rowColor"><td>708</td><td>sendCustomerMailReturnCreditnote_RCL020</td><td>6</td><td>Send an email that the order was canceled. The product is end-of-life and not available any longer. A credit note  document is attached to the email.</td><td>SEND_CUSTOMER_MAIL_RETURN_CREDITNOTE</td></tr>
+<tr class="altColor"><td>709</td><td>sendCustomerMailReturnCreditnote_RCL045</td><td>6</td><td>Send an email that the order was canceled. The payment was not received yet. A credit note  document is attached to the email.</td><td>SEND_CUSTOMER_MAIL_RETURN_CREDITNOTE</td></tr>
+<tr class="rowColor"><td>710</td><td>sendCustomerMailReturnCreditnoteRefunded</td><td>6</td><td>Send an email that a refund was made.</td><td>SEND_CUSTOMER_MAIL_RETURN_REFUNDED</td></tr>
+<tr class="altColor"><td>711</td><td>sendCustomerMailReturnCreditnote_RCL980</td><td>6</td><td>Send an email that the order was canceled. There is a suspicion of fraud. A credit note  document is attached to the email.</td><td>SEND_CUSTOMER_MAIL_RETURN_CREDITNOTE</td></tr>
+<tr class="rowColor"><td>712</td><td>sendCustomerMailReturnCreditnote_RCL021</td><td>6</td><td>Send an email that the order was canceled. The product is currently not available. A credit note  document is attached to the email.</td><td>SEND_CUSTOMER_MAIL_RETURN_CREDITNOTE</td></tr>
+<tr class="altColor"><td>713</td><td>sendCustomerMailReturnLabel</td><td>6</td><td>Send an email with an attached return label.</td><td>SEND_CUSTOMER_MAIL_RETURN_LABEL</td></tr>
+<tr class="rowColor"><td>714</td><td>sendCustomerMailReturnAnnouncement</td><td>6</td><td>Send an email that a return request was created.</td><td>SEND_CUSTOMER_MAIL_RETURN_ANNOUNCEMENT</td></tr>
+<tr class="altColor"><td>715</td><td>sendCustomerMailReturnAnnouncementTransmission</td><td>6</td><td>Send an email that a transmission for a return request was created.</td><td>SEND_CUSTOMER_MAIL_RETURN_ANNOUNCEMENT_TRANSMISS</td></tr>
+<tr class="rowColor"><td>1010</td><td>extSendOrder</td><td>2</td><td></td><td>EXT_SEND_ORDER</td></tr>
+<tr class="altColor"><td>1020</td><td>extReceiveOrder</td><td>1</td><td></td><td>EXT_RECEIVE_ORDER</td></tr>
+<tr class="rowColor"><td>1030</td><td>extSendArticle</td><td>1</td><td></td><td>EXT_SEND_ARTICLE</td></tr>
+<tr class="altColor"><td>1040</td><td>extReceiveArticle</td><td>2</td><td></td><td>EXT_RECEIVE_ARTICLE</td></tr>
+<tr class="rowColor"><td>1041</td><td>extReceiveStock</td><td>2</td><td></td><td>EXT_RECEIVE_STOCK</td></tr>
+<tr class="altColor"><td>1060</td><td>extReceiveReturn</td><td>2</td><td></td><td>EXT_RECEIVE_RETURN</td></tr>
+<tr class="rowColor"><td>1080</td><td>extReceiveDispatch</td><td>2</td><td></td><td>EXT_RECEIVE_DISPATCH</td></tr>
+<tr class="altColor"><td>1900</td><td>extTransferFile</td><td>2</td><td></td><td>EXT_SEND_FILE</td></tr>
+<tr class="rowColor"><td>1910</td><td>extSendSupplierDocumentDeliveryNote</td><td>2</td><td></td><td>EXT_SEND_SUPPLIER_DOCUMENT_DELIVERY_NOTE</td></tr>
+<tr class="altColor"><td>1920</td><td>extSendSalesAnalyticsFile</td><td>2</td><td></td><td>EXT_SEND_SALES_ANALYTICS_FILE</td></tr>
 </tr>
 </tbody>
 
