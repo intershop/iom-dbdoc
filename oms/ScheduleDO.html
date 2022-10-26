@@ -14,7 +14,7 @@
 <body>
 
 <div class="topNav">
-<h1 class="bar">&nbsp;INTERSHOP IOM 4.3.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision 2217ff1d359c06cd0f5da98484c554d1a8acff94)</h1>
+<h1 class="bar">&nbsp;INTERSHOP IOM 4.3.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision 888d31a0e98c4b628b6991a8b7c9fd2f186b43ab)</h1>
 </div>
 
 <h1>Table oms.ScheduleDO</h1>
@@ -327,19 +327,19 @@ Such &quot;missing&quot; foreign keys are denoted with &quot;NOT DEFINED&quot;.
 <tr class="rowColor">
 <td class="colFirst">ScheduleDO_check_active_tr</code></td>
 <td class="colFirst"></code></td>
-<td class="colLast"><code>CREATE TRIGGER "ScheduleDO_check_active_tr" BEFORE UPDATE ON "ScheduleDO" FOR EACH ROW EXECUTE PROCEDURE "ScheduleDO_check_activ_trf"()</code>&nbsp;</td>
+<td class="colLast"><code>CREATE TRIGGER "ScheduleDO_check_active_tr" BEFORE UPDATE ON "ScheduleDO" FOR EACH ROW EXECUTE FUNCTION "ScheduleDO_check_activ_trf"()</code>&nbsp;</td>
 </tr>
 
 <tr class="altColor">
 <td class="colFirst">ScheduleDO_check_tr</code></td>
 <td class="colFirst"></code></td>
-<td class="colLast"><code>CREATE TRIGGER "ScheduleDO_check_tr" BEFORE DELETE ON "ScheduleDO" FOR EACH ROW EXECUTE PROCEDURE "ScheduleDO_check_trf"()</code>&nbsp;</td>
+<td class="colLast"><code>CREATE TRIGGER "ScheduleDO_check_tr" BEFORE DELETE ON "ScheduleDO" FOR EACH ROW EXECUTE FUNCTION "ScheduleDO_check_trf"()</code>&nbsp;</td>
 </tr>
 
 <tr class="rowColor">
 <td class="colFirst">ScheduleDO_forbid_truncate_tr</code></td>
 <td class="colFirst"></code></td>
-<td class="colLast"><code>CREATE TRIGGER "ScheduleDO_forbid_truncate_tr" BEFORE TRUNCATE ON "ScheduleDO" FOR EACH STATEMENT EXECUTE PROCEDURE forbid_truncate_trf()</code>&nbsp;</td>
+<td class="colLast"><code>CREATE TRIGGER "ScheduleDO_forbid_truncate_tr" BEFORE TRUNCATE ON "ScheduleDO" FOR EACH STATEMENT EXECUTE FUNCTION forbid_truncate_trf()</code>&nbsp;</td>
 </tr>
 </tr>
 </tbody></table>

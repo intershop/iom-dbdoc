@@ -14,7 +14,7 @@
 <body>
 
 <div class="topNav">
-<h1 class="bar">&nbsp;INTERSHOP IOM 4.3.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision 2217ff1d359c06cd0f5da98484c554d1a8acff94)</h1>
+<h1 class="bar">&nbsp;INTERSHOP IOM 4.3.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision 888d31a0e98c4b628b6991a8b7c9fd2f186b43ab)</h1>
 </div>
 
 <h1>Table oms.OrganizationDO</h1>
@@ -165,25 +165,25 @@ Such &quot;missing&quot; foreign keys are denoted with &quot;NOT DEFINED&quot;.
 <li>Raise exceptions on invalid operations (some changes must be performed in the ShopDO or SupplierDO rather than here.</li>
 <li>Remove User2Role2Organization assignments that become invalid on tree changes</li>
 </ul></code></td>
-<td class="colLast"><code>CREATE TRIGGER push_organization_changes_tr AFTER INSERT OR DELETE OR UPDATE ON "OrganizationDO" FOR EACH ROW EXECUTE PROCEDURE push_organization_changes_trf()</code>&nbsp;</td>
+<td class="colLast"><code>CREATE TRIGGER push_organization_changes_tr AFTER INSERT OR DELETE OR UPDATE ON "OrganizationDO" FOR EACH ROW EXECUTE FUNCTION push_organization_changes_trf()</code>&nbsp;</td>
 </tr>
 
 <tr class="altColor">
 <td class="colFirst">verify_organization2shop_tr</code></td>
 <td class="colFirst"></code></td>
-<td class="colLast"><code>CREATE CONSTRAINT TRIGGER verify_organization2shop_tr AFTER INSERT OR DELETE OR UPDATE ON "OrganizationDO" DEFERRABLE INITIALLY DEFERRED FOR EACH ROW EXECUTE PROCEDURE verify_shop2organization_trf()</code>&nbsp;</td>
+<td class="colLast"><code>CREATE CONSTRAINT TRIGGER verify_organization2shop_tr AFTER INSERT OR DELETE OR UPDATE ON "OrganizationDO" DEFERRABLE INITIALLY DEFERRED FOR EACH ROW EXECUTE FUNCTION verify_shop2organization_trf()</code>&nbsp;</td>
 </tr>
 
 <tr class="rowColor">
 <td class="colFirst">verify_organization2supplier_tr</code></td>
 <td class="colFirst"></code></td>
-<td class="colLast"><code>CREATE CONSTRAINT TRIGGER verify_organization2supplier_tr AFTER INSERT OR DELETE OR UPDATE ON "OrganizationDO" DEFERRABLE INITIALLY DEFERRED FOR EACH ROW EXECUTE PROCEDURE verify_supplier2organization_trf()</code>&nbsp;</td>
+<td class="colLast"><code>CREATE CONSTRAINT TRIGGER verify_organization2supplier_tr AFTER INSERT OR DELETE OR UPDATE ON "OrganizationDO" DEFERRABLE INITIALLY DEFERRED FOR EACH ROW EXECUTE FUNCTION verify_supplier2organization_trf()</code>&nbsp;</td>
 </tr>
 
 <tr class="altColor">
 <td class="colFirst">z_prevent_organization_cycles_tr</code></td>
 <td class="colFirst"></code></td>
-<td class="colLast"><code>CREATE CONSTRAINT TRIGGER z_prevent_organization_cycles_tr AFTER INSERT OR UPDATE ON "OrganizationDO" DEFERRABLE INITIALLY DEFERRED FOR EACH ROW EXECUTE PROCEDURE prevent_organization_cycles_trf()</code>&nbsp;</td>
+<td class="colLast"><code>CREATE CONSTRAINT TRIGGER z_prevent_organization_cycles_tr AFTER INSERT OR UPDATE ON "OrganizationDO" DEFERRABLE INITIALLY DEFERRED FOR EACH ROW EXECUTE FUNCTION prevent_organization_cycles_trf()</code>&nbsp;</td>
 </tr>
 </tr>
 </tbody></table>

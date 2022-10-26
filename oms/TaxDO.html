@@ -14,7 +14,7 @@
 <body>
 
 <div class="topNav">
-<h1 class="bar">&nbsp;INTERSHOP IOM 4.3.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision 2217ff1d359c06cd0f5da98484c554d1a8acff94)</h1>
+<h1 class="bar">&nbsp;INTERSHOP IOM 4.3.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision 888d31a0e98c4b628b6991a8b7c9fd2f186b43ab)</h1>
 </div>
 
 <h1>Table oms.TaxDO</h1>
@@ -212,13 +212,13 @@ Such &quot;missing&quot; foreign keys are denoted with &quot;NOT DEFINED&quot;.
 <tr class="rowColor">
 <td class="colFirst">check_4_overlapping_taxdos_tr</code></td>
 <td class="colFirst">Prevent overlap of validity ranges</code></td>
-<td class="colLast"><code>CREATE TRIGGER check_4_overlapping_taxdos_tr BEFORE INSERT OR UPDATE ON "TaxDO" FOR EACH ROW EXECUTE PROCEDURE check_4_overlapping_taxdos_trf()</code>&nbsp;</td>
+<td class="colLast"><code>CREATE TRIGGER check_4_overlapping_taxdos_tr BEFORE INSERT OR UPDATE ON "TaxDO" FOR EACH ROW EXECUTE FUNCTION check_4_overlapping_taxdos_trf()</code>&nbsp;</td>
 </tr>
 
 <tr class="altColor">
 <td class="colFirst">taxdo_defaultlocation_tr</code></td>
 <td class="colFirst">Fill the "location" to the Country ISO Code 3 when not provided otherwise.</code></td>
-<td class="colLast"><code>CREATE TRIGGER taxdo_defaultlocation_tr BEFORE INSERT OR UPDATE ON "TaxDO" FOR EACH ROW EXECUTE PROCEDURE taxdo_defaultlocation_trf()</code>&nbsp;</td>
+<td class="colLast"><code>CREATE TRIGGER taxdo_defaultlocation_tr BEFORE INSERT OR UPDATE ON "TaxDO" FOR EACH ROW EXECUTE FUNCTION taxdo_defaultlocation_trf()</code>&nbsp;</td>
 </tr>
 </tr>
 </tbody></table>

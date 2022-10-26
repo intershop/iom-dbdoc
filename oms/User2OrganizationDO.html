@@ -14,7 +14,7 @@
 <body>
 
 <div class="topNav">
-<h1 class="bar">&nbsp;INTERSHOP IOM 4.3.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision 2217ff1d359c06cd0f5da98484c554d1a8acff94)</h1>
+<h1 class="bar">&nbsp;INTERSHOP IOM 4.3.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision 888d31a0e98c4b628b6991a8b7c9fd2f186b43ab)</h1>
 </div>
 
 <h1>Table oms.User2OrganizationDO</h1>
@@ -79,7 +79,7 @@ UNIQUE: does don't cover unique constraints and indexes defined on more than one
 <tr class="rowColor">
 <td class="colFirst">remove_shadow_u2o_tr</code></td>
 <td class="colFirst"></code></td>
-<td class="colLast"><code>CREATE CONSTRAINT TRIGGER remove_shadow_u2o_tr AFTER INSERT OR UPDATE ON "User2OrganizationDO" DEFERRABLE INITIALLY DEFERRED FOR EACH ROW EXECUTE PROCEDURE remove_shadow_u2o_trf()</code>&nbsp;</td>
+<td class="colLast"><code>CREATE CONSTRAINT TRIGGER remove_shadow_u2o_tr AFTER INSERT OR UPDATE ON "User2OrganizationDO" DEFERRABLE INITIALLY DEFERRED FOR EACH ROW EXECUTE FUNCTION remove_shadow_u2o_trf()</code>&nbsp;</td>
 </tr>
 </tr>
 </tbody></table>
