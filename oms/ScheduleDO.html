@@ -14,12 +14,12 @@
 <body>
 
 <div class="topNav">
-<h1 class="bar">&nbsp;INTERSHOP IOM 4.3.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision 9039c49f3deb4349d835195baa0553f06e5491e7)</h1>
+<h1 class="bar">&nbsp;INTERSHOP IOM 4.3.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision 2217ff1d359c06cd0f5da98484c554d1a8acff94)</h1>
 </div>
 
 <h1>Table oms.ScheduleDO</h1>
-<h5>Additional schedules for jobs that are not triggered by quartz.<br>
-		A single java timer running each minute checks which of the jobs scheduled here must be run.<br>
+<h5>Additional schedules for jobs that are not triggered by quartz.<br>
+		A single java timer running each minute checks which of the jobs scheduled here must be run.<br>
 		Colum names ending with "Current" are runtime attributes meant to temporarily overwrite the basic configuration during the OMS operation . They must not be set within project configuration scripts.</h5>
 <table class="memberSummary" cellspacing="0" cellpadding="3" border="0">
 <h2>Columns</span><span class="tabEnd">&nbsp;</h2>
@@ -120,7 +120,7 @@
 <td class="colOne"><code>timestamp without time zone</code></td>
 <td class="colOne"><code></code></td>
 <td class="colOne"><code></code></td>
-<td class="colLast"><code><strong>Internal usage. Do not set by hand.</strong><br>
+<td class="colLast"><code><strong>Internal usage. Do not set by hand.</strong><br>
   			Timestamp when the job got locked. If NULL the job is not locked. Otherwise it is considered to be running</code>&nbsp;</td>
 </tr>
 
@@ -169,7 +169,7 @@
 <td class="colOne"><code>timestamp without time zone</code></td>
 <td class="colOne"><code></code></td>
 <td class="colOne"><code></code></td>
-<td class="colLast"><code><strong>Internal usage. Do not set by hand.</strong><br>
+<td class="colLast"><code><strong>Internal usage. Do not set by hand.</strong><br>
 				Timestamp when a failed job should next be retried. Is set to now + retryDelay on issues, e.g. when the schedule is still locked at the regular time. When set, this timestamp is used instead of the cron expression.</code>&nbsp;</td>
 </tr>
 
@@ -270,8 +270,8 @@
 <td class="colOne"><code>timestamp without time zone</code></td>
 <td class="colOne"><code></code></td>
 <td class="colOne"><code></code></td>
-<td class="colLast"><code>Runtime configuration. When set, this define the next time when the schedule should run.<br>
-This attribute is resetted to null when the schedule is then being attempted (independently of its success or error state)<br>
+<td class="colLast"><code>Runtime configuration. When set, this define the next time when the schedule should run.<br>
+This attribute is resetted to null when the schedule is then being attempted (independently of its success or error state)<br>
 The attributes nextRetryDate, cron and cronCurrent have no effect when nextRetryDateCurrent is set; only active[Current] is still respected.</code>&nbsp;</td>
 </tr>
 

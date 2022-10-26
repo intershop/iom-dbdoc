@@ -14,7 +14,7 @@
 <body>
 
 <div class="topNav">
-<h1 class="bar">&nbsp;INTERSHOP IOM 4.3.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision 9039c49f3deb4349d835195baa0553f06e5491e7)</h1>
+<h1 class="bar">&nbsp;INTERSHOP IOM 4.3.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision 2217ff1d359c06cd0f5da98484c554d1a8acff94)</h1>
 </div>
 
 <h1>Table oms.TransmissionTypeDefDO (Enum)</h1>
@@ -106,11 +106,6 @@ UNIQUE: does don't cover unique constraints and indexes defined on more than one
 <th class="colLast" scope="col">Constraint Name<superscript>[1]</superscript></th>
 </tr>
 
-<tr class="rowColor"><td class="colFirst colAlignRight"><code>admin</code></td><td class="colFirst"><code>migration_miss_InvoicingTransmissionDO.(transmissionTypeDefRef)</code>&nbsp;</td>
-<td class="colFirst"><code>TransmissionTypeDefDO.(id)</code>&nbsp;</td> 
-<td class="colLast"><code>NOT DEFINED</code>&nbsp;</td>
-</tr>
-
 <tr class="rowColor"><td class="colFirst colAlignRight"><code>oms</code></td><td class="colFirst"><code><span class="memberNameLink"><a href="../oms/CommunicationDO.html">CommunicationDO</a></span>.(transmissionTypeDefRef)</code>&nbsp;</td>
 <td class="colFirst"><code>TransmissionTypeDefDO.(id)</code>&nbsp;</td> 
 <td class="colLast"><code>TransmissionDefDO_fkey</code>&nbsp;</td>
@@ -121,17 +116,17 @@ UNIQUE: does don't cover unique constraints and indexes defined on more than one
 <td class="colLast"><code>transmissionTypeDispatchTransmissionDO</code>&nbsp;</td>
 </tr>
 
-<tr class="altColor"><td class="colFirst colAlignRight"><code>oms</code></td><td class="colFirst"><code>DocumentTransmissionDO.(transmissionTypeDefRef)</code>&nbsp;</td>
+<tr class="rowColor"><td class="colFirst colAlignRight"><code>oms</code></td><td class="colFirst"><code>DocumentTransmissionDO.(transmissionTypeDefRef)</code>&nbsp;</td>
 <td class="colFirst"><code>TransmissionTypeDefDO.(id)</code>&nbsp;</td> 
 <td class="colLast"><code>NOT DEFINED</code>&nbsp;</td>
 </tr>
 
-<tr class="rowColor"><td class="colFirst colAlignRight"><code>oms</code></td><td class="colFirst"><code><span class="memberNameLink"><a href="../oms/FileTransferConfigurationDO.html">FileTransferConfigurationDO</a></span>.(transmissionTypeDefRef)</code>&nbsp;</td>
+<tr class="altColor"><td class="colFirst colAlignRight"><code>oms</code></td><td class="colFirst"><code><span class="memberNameLink"><a href="../oms/FileTransferConfigurationDO.html">FileTransferConfigurationDO</a></span>.(transmissionTypeDefRef)</code>&nbsp;</td>
 <td class="colFirst"><code>TransmissionTypeDefDO.(id)</code>&nbsp;</td> 
 <td class="colLast"><code>NOT DEFINED</code>&nbsp;</td>
 </tr>
 
-<tr class="altColor"><td class="colFirst colAlignRight"><code>oms</code></td><td class="colFirst"><code>InvoicingTransmissionDO.(transmissionTypeDefRef)</code>&nbsp;</td>
+<tr class="rowColor"><td class="colFirst colAlignRight"><code>oms</code></td><td class="colFirst"><code>InvoicingTransmissionDO.(transmissionTypeDefRef)</code>&nbsp;</td>
 <td class="colFirst"><code>TransmissionTypeDefDO.(id)</code>&nbsp;</td> 
 <td class="colLast"><code>NOT DEFINED</code>&nbsp;</td>
 </tr>
@@ -146,7 +141,7 @@ UNIQUE: does don't cover unique constraints and indexes defined on more than one
 <td class="colLast"><code>transmissionTypeDefRefOrderTransmissionDO</code>&nbsp;</td>
 </tr>
 
-<tr class="rowColor"><td class="colFirst colAlignRight"><code>oms</code></td><td class="colFirst"><code>PaymentNotificationTransmissionDO.(transmissionTypeDefRef)</code>&nbsp;</td>
+<tr class="altColor"><td class="colFirst colAlignRight"><code>oms</code></td><td class="colFirst"><code>PaymentNotificationTransmissionDO.(transmissionTypeDefRef)</code>&nbsp;</td>
 <td class="colFirst"><code>TransmissionTypeDefDO.(id)</code>&nbsp;</td> 
 <td class="colLast"><code>NOT DEFINED</code>&nbsp;</td>
 </tr>
@@ -156,12 +151,12 @@ UNIQUE: does don't cover unique constraints and indexes defined on more than one
 <td class="colLast"><code>transmissionTypeDefRefResponseTransmissionDO</code>&nbsp;</td>
 </tr>
 
-<tr class="altColor"><td class="colFirst colAlignRight"><code>oms</code></td><td class="colFirst"><code>ReturnAnnouncementTransmissionDO.(transmissionTypeDefRef)</code>&nbsp;</td>
+<tr class="rowColor"><td class="colFirst colAlignRight"><code>oms</code></td><td class="colFirst"><code>ReturnAnnouncementTransmissionDO.(transmissionTypeDefRef)</code>&nbsp;</td>
 <td class="colFirst"><code>TransmissionTypeDefDO.(id)</code>&nbsp;</td> 
 <td class="colLast"><code>NOT DEFINED</code>&nbsp;</td>
 </tr>
 
-<tr class="rowColor"><td class="colFirst colAlignRight"><code>oms</code></td><td class="colFirst"><code>ReturnRequestTransmissionDO.(transmissionTypeDefRef)</code>&nbsp;</td>
+<tr class="altColor"><td class="colFirst colAlignRight"><code>oms</code></td><td class="colFirst"><code>ReturnRequestTransmissionDO.(transmissionTypeDefRef)</code>&nbsp;</td>
 <td class="colFirst"><code>TransmissionTypeDefDO.(id)</code>&nbsp;</td> 
 <td class="colLast"><code>NOT DEFINED</code>&nbsp;</td>
 </tr>
