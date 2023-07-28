@@ -63,6 +63,14 @@ code, tt {
     margin-top:8px;
     line-height:1.5em;
 }
+codeSmall {
+    font-family:'open-sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size:9px;
+    padding-top:4px;
+    margin-top:8px;
+    line-height:1.5em;
+    white-space: pre-wrap; 
+}
 dt code {
     font-family:'open-sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size:12px;
