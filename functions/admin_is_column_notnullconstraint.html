@@ -21,7 +21,9 @@
 </tr>
 
 <tr id="16442" class="rowColor">
-       <td class="colFirst"><h5><div style=" white-space: pre-wrap;">true when the column has a not null constraint.
+       <td class="colFirst"><h5><div style=" white-space: pre-wrap;">Deprecated, use the new version with the additional ignore_missing parameter
+
+true when the column has a not null constraint.
 Throws an exception if the column does not exist.
 example:
   select admin.is_column_notnullconstraint('oms','OrderDO','id');
@@ -30,6 +32,20 @@ example:
 ( p_shema   character varying,
   p_table   character varying,
   p_column  character varying
+) RETURNS boolean
+LANGUAGE 'plpgsql' volatile;</div></code>&nbsp;</td>
+</tr>
+<tr id="29352" class="altColor">
+       <td class="colFirst"><h5><div style=" white-space: pre-wrap;">true when the column has a not null constraint.
+With ignore_missing=false: Throws an exception if the column does not exist, otherwise return false when the column does not exist.
+example:
+  select admin.is_column_notnullconstraint('oms','OrderDO','id', true);
+</div></h5>
+       <br/><code><div style="white-space: pre-wrap; font-family: monospace;">FUNCTION admin.is_column_notnullconstraint
+( p_shema         character varying,
+  p_table         character varying,
+  p_column        character varying,
+  ignore_missing  boolean
 ) RETURNS boolean
 LANGUAGE 'plpgsql' volatile;</div></code>&nbsp;</td>
 </tr>

@@ -14,7 +14,7 @@
 <body>
 
 <div class="topNav">
-<h1 class="bar">&nbsp;INTERSHOP IOM 5.0.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision 0126243831f20a4b466f9dc1b6fa9e77b7e45543)</h1>
+<h1 class="bar">&nbsp;INTERSHOP IOM 5.0.0-SNAPSHOT Database Model&nbsp;&nbsp;&nbsp;(revision de6a44055899d6b78f159bbed96033c40c5ec4bd)</h1>
 </div>
 
 <h1>Table oms.TaxDO</h1>
@@ -113,19 +113,9 @@ UNIQUE: does don't cover unique constraints and indexes defined on more than one
 <th class="colLast" scope="col">Constraint Name<superscript>[1]</superscript></th>
 </tr>
 
-<tr class="rowColor"><td class="colFirst colAlignRight"><code>oms</code></td><td class="colFirst"><code>InvoicingSalesPriceChargeDO.(taxRef)</code>&nbsp;</td>
-<td class="colFirst"><code>TaxDO.(id)</code>&nbsp;</td> 
-<td class="colLast"><code>InvoicingSalesPriceChargeDO_fk_taxRef</code>&nbsp;</td>
-</tr>
-
-<tr class="altColor"><td class="colFirst colAlignRight"><code>oms</code></td><td class="colFirst"><code>InvoicingSalesPriceChargeTaxDO.(taxRef)</code>&nbsp;</td>
+<tr class="rowColor"><td class="colFirst colAlignRight"><code>oms</code></td><td class="colFirst"><code>InvoicingSalesPriceChargeTaxDO.(taxRef)</code>&nbsp;</td>
 <td class="colFirst"><code>TaxDO.(id)</code>&nbsp;</td> 
 <td class="colLast"><code>InvoicingSalesPriceChargeTaxDO_fk_TaxDO</code>&nbsp;</td>
-</tr>
-
-<tr class="rowColor"><td class="colFirst colAlignRight"><code>oms</code></td><td class="colFirst"><code>InvoicingSalesPricePosDO.(taxRef)</code>&nbsp;</td>
-<td class="colFirst"><code>TaxDO.(id)</code>&nbsp;</td> 
-<td class="colLast"><code>InvoicingSalesPricePosDO_fk_taxRef</code>&nbsp;</td>
 </tr>
 
 <tr class="altColor"><td class="colFirst colAlignRight"><code>oms</code></td><td class="colFirst"><code>InvoicingSalesPricePosTaxDO.(taxRef)</code>&nbsp;</td>
@@ -158,19 +148,9 @@ UNIQUE: does don't cover unique constraints and indexes defined on more than one
 <td class="colLast"><code>OrderTotalTaxGroupDO_fk_taxRef</code>&nbsp;</td>
 </tr>
 
-<tr class="altColor"><td class="colFirst colAlignRight"><code>oms</code></td><td class="colFirst"><code>PaymentSalesPriceChargeDO.(taxRef)</code>&nbsp;</td>
-<td class="colFirst"><code>TaxDO.(id)</code>&nbsp;</td> 
-<td class="colLast"><code>PaymentSalesPriceChargeDO_fk_taxRef</code>&nbsp;</td>
-</tr>
-
-<tr class="rowColor"><td class="colFirst colAlignRight"><code>oms</code></td><td class="colFirst"><code>PaymentSalesPriceChargeTaxDO.(taxRef)</code>&nbsp;</td>
+<tr class="altColor"><td class="colFirst colAlignRight"><code>oms</code></td><td class="colFirst"><code>PaymentSalesPriceChargeTaxDO.(taxRef)</code>&nbsp;</td>
 <td class="colFirst"><code>TaxDO.(id)</code>&nbsp;</td> 
 <td class="colLast"><code>PaymentSalesPriceChargeTaxDO_fk_TaxDO</code>&nbsp;</td>
-</tr>
-
-<tr class="altColor"><td class="colFirst colAlignRight"><code>oms</code></td><td class="colFirst"><code>PaymentSalesPricePosDO.(taxRef)</code>&nbsp;</td>
-<td class="colFirst"><code>TaxDO.(id)</code>&nbsp;</td> 
-<td class="colLast"><code>PaymentSalesPricePosDO_fk_taxRef</code>&nbsp;</td>
 </tr>
 
 <tr class="rowColor"><td class="colFirst colAlignRight"><code>oms</code></td><td class="colFirst"><code>PaymentSalesPricePosTaxDO.(taxRef)</code>&nbsp;</td>
